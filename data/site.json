@@ -1,0 +1,2645 @@
+{
+ "schema": 1,
+ "from": "2026-11-16",
+ "to": "2027-02-13",
+ "calendar": "Rito romano 1962 (rúbricas de 1960)",
+ "chapels": [
+  {
+   "id": "I",
+   "name": "Capilla Nuestra Señora de la Merced",
+   "short": "N.ª S.ª de la Merced · Sants",
+   "district": "Sants",
+   "institution": "FSSPX",
+   "address": "C/ Vallespir, 118",
+   "postcode": "08014",
+   "city": "Barcelona",
+   "phone": "91 812 28 81",
+   "phone_note": "Prefijo 91 (Madrid) tal como figura en fsspx.es; confirmar antes de publicar.",
+   "email": null,
+   "sources": [
+    "https://fsspx.es/es/capilla-nuestra-senora-la-merced-barcelona-noviembre-2026-34845"
+   ],
+   "verified": true,
+   "confessions": "30 min antes de cada Misa",
+   "tag": "Sants",
+   "tint": "#3c6e9f",
+   "tint_dark": "#7fb1e3",
+   "links": [
+    {
+     "type": "web",
+     "label": "fsspx.es · Capilla de Barcelona",
+     "url": "https://fsspx.es/es/capilla-nuestra-senora-la-merced-barcelona-noviembre-2026-34845"
+    }
+   ],
+   "status": {
+    "stale": false,
+    "checked": "2026-11-16T11:47+00:00",
+    "source": "hoja mensual (PDF) de fsspx.es",
+    "pdf": true
+   },
+   "regular": [
+    {
+     "days": [
+      "fri",
+      "sat"
+     ],
+     "time": "18:30",
+     "kind": "Santo Rosario"
+    },
+    {
+     "days": [
+      "fri",
+      "sat"
+     ],
+     "time": "19:00",
+     "kind": "Misa rezada"
+    },
+    {
+     "days": [
+      "sat"
+     ],
+     "time": "19:45",
+     "kind": "Conferencia"
+    },
+    {
+     "days": [
+      "sun"
+     ],
+     "time": "9:00",
+     "kind": "Misa rezada"
+    },
+    {
+     "days": [
+      "sun"
+     ],
+     "time": "11:00",
+     "kind": "Misa cantada"
+    }
+   ]
+  },
+  {
+   "id": "II",
+   "name": "Parròquia de Sant Jordi de Vallcarca",
+   "short": "Sant Jordi · Vallcarca",
+   "district": "Vallcarca",
+   "institution": "Archidiócesis de Barcelona (parroquia diocesana)",
+   "address": "Viaducte de Vallcarca, 7",
+   "postcode": "08023",
+   "city": "Barcelona",
+   "phone": "932 199 020",
+   "phone_note": null,
+   "email": "santjordivallcarca@gmail.com",
+   "sources": [
+    "https://www.latinmassdir.org/venue/sant-jordi-de-vallcarca-san-jorge-de-vallcarca-saint-george-of-vallcarca-barcelona-spain/",
+    "https://www.lamisadesiempre.com/misas-tradicionales-en-espana"
+   ],
+   "verified": false,
+   "verified_note": "Horario de directorios de terceros (ficha de latinmassdir actualizada hace ~2 años). Confirmar con la parroquia.",
+   "confessions": null,
+   "tag": "Vallcarca",
+   "tint": "#2e8379",
+   "tint_dark": "#6cc9bd",
+   "links": [],
+   "status": {
+    "stale": false,
+    "checked": null,
+    "source": "manual"
+   },
+   "regular": [
+    {
+     "days": [
+      "sun"
+     ],
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "months": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "III",
+   "name": "Capilla de Nuestra Señora de la Merced y San Pedro Apóstol",
+   "short": "Merced y San Pedro · Laforja",
+   "district": "Sant Gervasi",
+   "institution": "Misa Tradicional Barcelona",
+   "address": "C/ Laforja, 21",
+   "postcode": "08006",
+   "city": "Barcelona",
+   "phone": "657 93 74 47",
+   "phone_note": null,
+   "email": "capillalaforja@gmail.com",
+   "sources": [
+    "https://misatradicional.es/",
+    "https://es-la.facebook.com/capillalaforja/"
+   ],
+   "verified": true,
+   "rosary_before_min": 30,
+   "confessions": "Antes de cada Misa",
+   "tag": "Laforja",
+   "tint": "#a2582b",
+   "tint_dark": "#e39a6c",
+   "links": [
+    {
+     "type": "web",
+     "label": "misatradicional.es",
+     "url": "https://misatradicional.es/"
+    },
+    {
+     "type": "instagram",
+     "label": "@misatradicional.es",
+     "url": "https://www.instagram.com/misatradicional.es/"
+    }
+   ],
+   "status": {
+    "stale": false,
+    "checked": "2026-11-16T11:47+00:00",
+    "source": "https://misatradicional.es/"
+   },
+   "regular": [
+    {
+     "days": [
+      "sun"
+     ],
+     "time": "12:30",
+     "kind": "Misa cantada"
+    },
+    {
+     "days": [
+      "wed"
+     ],
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "skip_months": [
+      9
+     ]
+    }
+   ]
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-11-16",
+   "liturgy": {
+    "date": "2026-11-16",
+    "title": "Sta. Gertrudis, Virgen",
+    "title_la": "S. Gertrudis Virginis",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-17",
+   "liturgy": {
+    "date": "2026-11-17",
+    "title": "S. Gregorio Taumaturgo, Obispo y Confesor",
+    "title_la": "S. Gregorii Thaumaturgi Episcopi et Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-18",
+   "liturgy": {
+    "date": "2026-11-18",
+    "title": "Dedicación de las Basílicas de los Ss. Apóstoles Pedro y Pablo",
+    "title_la": "In Dedicatione Basilicarum Ss. Apostolorum Petri et Pauli",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-19",
+   "liturgy": {
+    "date": "2026-11-19",
+    "title": "Sta. Isabel, Viuda",
+    "title_la": "S. Elisabeth Viduæ",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-20",
+   "liturgy": {
+    "date": "2026-11-20",
+    "title": "S. Félix de Valois, Confesor",
+    "title_la": "S. Felicis de Valois Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [
+    "I"
+   ],
+   "pdf": {
+    "title": "San Félix de Valois",
+    "subtitle": "Cf",
+    "color": "blanco"
+   },
+   "notes": [
+    {
+     "chapel": "I",
+     "text": "El padre no asiste, no habrá Santa Misa."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-21",
+   "liturgy": {
+    "date": "2026-11-21",
+    "title": "Presentación de la Bienaventurada Virgen María",
+    "title_la": "In Presentatione Beatæ Mariæ Virginis",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "17:00",
+     "kind": "Reunión de la Archicofradía San Esteban",
+     "chapel": "I"
+    },
+    {
+     "time": "18:00",
+     "kind": "Confesiones",
+     "chapel": "I"
+    },
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "20:00",
+     "kind": "Catecismo de adultos",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": {
+    "title": "Presentación de la Santísima Virgen María",
+    "subtitle": null,
+    "color": "blanco"
+   },
+   "notes": []
+  },
+  {
+   "date": "2026-11-22",
+   "liturgy": {
+    "date": "2026-11-22",
+    "title": "Domingo XXIV y último después de Pentecostés",
+    "title_la": "Dominica XXIV et ultima Post Pentecosten",
+    "class": "II",
+    "color": "verde",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "08:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Confesiones",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "10:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": {
+    "title": "XXVIº después de Pentecostés",
+    "subtitle": null,
+    "color": "blanco"
+   },
+   "notes": []
+  },
+  {
+   "date": "2026-11-23",
+   "liturgy": {
+    "date": "2026-11-23",
+    "title": "S. Clemente, Papa y Mártir",
+    "title_la": "S. Clementis Papæ et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-24",
+   "liturgy": {
+    "date": "2026-11-24",
+    "title": "S. Juan de la Cruz, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Joannis a Cruce Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-25",
+   "liturgy": {
+    "date": "2026-11-25",
+    "title": "Sta. Catalina, Virgen y Mártir",
+    "title_la": "S. Catharinæ Virginis et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-26",
+   "liturgy": {
+    "date": "2026-11-26",
+    "title": "S. Silvestre, Abad",
+    "title_la": "S. Silvestri Abbatis",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-11-27",
+   "liturgy": {
+    "date": "2026-11-27",
+    "title": "Viernes en la semana XXIV después de Pentecostés",
+    "title_la": "Feria Sexta infra Hebdomadam XXIV post Octavam Pentecostes",
+    "class": "IV",
+    "color": "verde",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:00",
+     "kind": "Confesiones",
+     "chapel": "I"
+    },
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "20:00",
+     "kind": "Ensayo de coro",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": {
+    "title": "De la feria Nuestra Señora de la Medalla Milagrosa",
+    "subtitle": null,
+    "color": "blanco"
+   },
+   "notes": []
+  },
+  {
+   "date": "2026-11-28",
+   "liturgy": {
+    "date": "2026-11-28",
+    "title": "Sanctæ Mariæ Sabbato",
+    "title_la": "Sanctæ Mariæ Sabbato",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:00",
+     "kind": "Confesiones",
+     "chapel": "I"
+    },
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "20:00",
+     "kind": "Catecismo de adultos",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": {
+    "title": "De la Virgen María",
+    "subtitle": null,
+    "color": "blanco"
+   },
+   "notes": []
+  },
+  {
+   "date": "2026-11-29",
+   "liturgy": {
+    "date": "2026-11-29",
+    "title": "Domingo I de Adviento",
+    "title_la": "Dominica I Adventus",
+    "class": "I",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "08:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Confesiones",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "10:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": {
+    "title": "I de Adviento",
+    "subtitle": null,
+    "color": "violeta"
+   },
+   "notes": []
+  },
+  {
+   "date": "2026-11-30",
+   "liturgy": {
+    "date": "2026-11-30",
+    "title": "S. Andrés, Apóstol",
+    "title_la": "S. Andreæ Apostoli",
+    "class": "II",
+    "color": "rojo",
+    "commemorations": [
+     "Feria II infra Hebdomadam I Adventus"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-01",
+   "liturgy": {
+    "date": "2026-12-01",
+    "title": "Martes en la semana I de Adviento",
+    "title_la": "Feria III infra Hebdomadam I Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-02",
+   "liturgy": {
+    "date": "2026-12-02",
+    "title": "Sta. Bibiana, Virgen y Mártir",
+    "title_la": "S. Bibianæ Virginis et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": [
+     "Feria IV infra Hebdomadam I Adventus"
+    ]
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-03",
+   "liturgy": {
+    "date": "2026-12-03",
+    "title": "S. Francisco Javier, Confesor",
+    "title_la": "S. Francisci Xaverii Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": [
+     "Feria V infra Hebdomadam I Adventus"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-04",
+   "liturgy": {
+    "date": "2026-12-04",
+    "title": "S. Pedro Crisólogo, Obispo, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Petri Chrysologi Episcopi Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": [
+     "Feria VI infra Hebdomadam I Adventus"
+    ]
+   },
+   "entries": [
+    {
+     "time": "18:20",
+     "kind": "Vía Crucis",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Hora Santa",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-05",
+   "liturgy": {
+    "date": "2026-12-05",
+    "title": "Sábado en la semana I de Adviento",
+    "title_la": "Sabbato infra Hebdomadam I Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Exposición y Rosario meditado",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-06",
+   "liturgy": {
+    "date": "2026-12-06",
+    "title": "Domingo II de Adviento",
+    "title_la": "Dominica II Adventus",
+    "class": "I",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-07",
+   "liturgy": {
+    "date": "2026-12-07",
+    "title": "S. Ambrosio, Obispo, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Ambrosii Episcopi Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": [
+     "Feria II infra Hebdomadam II Adventus"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-08",
+   "liturgy": {
+    "date": "2026-12-08",
+    "title": "Inmaculada Concepción de la Bienaventurada Virgen María",
+    "title_la": "In Conceptione Immaculata Beatæ Mariæ Virginis",
+    "class": "I",
+    "color": "blanco",
+    "commemorations": [
+     "Feria III infra Hebdomadam II Adventus"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-09",
+   "liturgy": {
+    "date": "2026-12-09",
+    "title": "Miércoles en la semana II de Adviento",
+    "title_la": "Feria IV infra Hebdomadam II Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-10",
+   "liturgy": {
+    "date": "2026-12-10",
+    "title": "Jueves en la semana II de Adviento",
+    "title_la": "Feria V infra Hebdomadam II Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-11",
+   "liturgy": {
+    "date": "2026-12-11",
+    "title": "S. Dámaso, Papa y Confesor",
+    "title_la": "S. Damasi Papæ et Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": [
+     "Feria VI infra Hebdomadam II Adventus"
+    ]
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-12",
+   "liturgy": {
+    "date": "2026-12-12",
+    "title": "Sábado en la semana II de Adviento",
+    "title_la": "Sabbato infra Hebdomadam II Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-13",
+   "liturgy": {
+    "date": "2026-12-13",
+    "title": "Domingo III de Adviento",
+    "title_la": "Dominica III Adventus",
+    "class": "I",
+    "color": "rosa",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-14",
+   "liturgy": {
+    "date": "2026-12-14",
+    "title": "Lunes en la semana III de Adviento",
+    "title_la": "Feria II infra Hebdomadam III Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-15",
+   "liturgy": {
+    "date": "2026-12-15",
+    "title": "Martes en la semana III de Adviento",
+    "title_la": "Feria III infra Hebdomadam III Adventus",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-16",
+   "liturgy": {
+    "date": "2026-12-16",
+    "title": "Miércoles de Témporas de Adviento",
+    "title_la": "Feria IV Quattuor Temporum in Adventu",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-17",
+   "liturgy": {
+    "date": "2026-12-17",
+    "title": "Jueves en la semana III de Adviento",
+    "title_la": "Feria V infra Hebdomadam III Adventus",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-18",
+   "liturgy": {
+    "date": "2026-12-18",
+    "title": "Viernes de Témporas de Adviento",
+    "title_la": "Feria VI Quattuor Temporum in Adventu",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-19",
+   "liturgy": {
+    "date": "2026-12-19",
+    "title": "Sábado de Témporas de Adviento",
+    "title_la": "Sabbato Quattuor Temporum in Adventu",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-20",
+   "liturgy": {
+    "date": "2026-12-20",
+    "title": "Domingo IV de Adviento",
+    "title_la": "Dominica IV Adventus",
+    "class": "I",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-21",
+   "liturgy": {
+    "date": "2026-12-21",
+    "title": "S. Tomás, Apóstol",
+    "title_la": "S. Thomæ Apostoli",
+    "class": "II",
+    "color": "rojo",
+    "commemorations": [
+     "Feria II infra Hebdomadam IV Adventus"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-22",
+   "liturgy": {
+    "date": "2026-12-22",
+    "title": "Martes en la semana IV de Adviento",
+    "title_la": "Feria III infra Hebdomadam IV Adventus",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-23",
+   "liturgy": {
+    "date": "2026-12-23",
+    "title": "Miércoles en la semana IV de Adviento",
+    "title_la": "Feria IV infra Hebdomadam IV Adventus",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-24",
+   "liturgy": {
+    "date": "2026-12-24",
+    "title": "Vigilia de la Natividad del Señor",
+    "title_la": "In Vigilia Nativitatis Domini",
+    "class": "I",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-25",
+   "liturgy": {
+    "date": "2026-12-25",
+    "title": "Natividad del Señor, en la noche",
+    "title_la": "In Nativitate Domini in nocte",
+    "class": "I",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-26",
+   "liturgy": {
+    "date": "2026-12-26",
+    "title": "S. Esteban, Protomártir",
+    "title_la": "S. Stephani Protomartyris",
+    "class": "II",
+    "color": "rojo",
+    "commemorations": [
+     "Diei II infra Octavam Nativitatis"
+    ]
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-27",
+   "liturgy": {
+    "date": "2026-12-27",
+    "title": "Domingo dentro de la Octava de Navidad",
+    "title_la": "Dominica Infra Octavam Nativitatis",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": [
+     "S. Joannis Apostoli et Evangelistæ"
+    ]
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-28",
+   "liturgy": {
+    "date": "2026-12-28",
+    "title": "Ss. Inocentes",
+    "title_la": "Ss. Innocentium",
+    "class": "II",
+    "color": "rojo",
+    "commemorations": [
+     "Diei IV infra Octavam Nativitatis"
+    ]
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-29",
+   "liturgy": {
+    "date": "2026-12-29",
+    "title": "Día V de la Octava de Navidad",
+    "title_la": "Die V infra Octavam Nativitatis",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-30",
+   "liturgy": {
+    "date": "2026-12-30",
+    "title": "Día VI de la Octava de Navidad",
+    "title_la": "Die VI infra Octavam Nativitatis",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2026-12-31",
+   "liturgy": {
+    "date": "2026-12-31",
+    "title": "Día VII de la Octava de Navidad",
+    "title_la": "Die VII infra Octavam Nativitatis",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-01",
+   "liturgy": {
+    "date": "2027-01-01",
+    "title": "Circuncisión del Señor",
+    "title_la": "Die Octavæ Nativitatis Domini",
+    "class": "I",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:20",
+     "kind": "Vía Crucis",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Hora Santa",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-02",
+   "liturgy": {
+    "date": "2027-01-02",
+    "title": "Sanctæ Mariæ Sabbato",
+    "title_la": "Sanctæ Mariæ Sabbato",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Exposición y Rosario meditado",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-03",
+   "liturgy": {
+    "date": "2027-01-03",
+    "title": "Santísimo Nombre de Jesús",
+    "title_la": "Sanctissimi Nominis Jesu",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-04",
+   "liturgy": {
+    "date": "2027-01-04",
+    "title": "Día 4 de enero",
+    "title_la": "Die Quarta Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-05",
+   "liturgy": {
+    "date": "2027-01-05",
+    "title": "Día 5 de enero",
+    "title_la": "Die Quinta Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-06",
+   "liturgy": {
+    "date": "2027-01-06",
+    "title": "Epifanía del Señor",
+    "title_la": "In Epiphania Domini",
+    "class": "I",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-07",
+   "liturgy": {
+    "date": "2027-01-07",
+    "title": "Día 7 de enero",
+    "title_la": "Die Septima Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-08",
+   "liturgy": {
+    "date": "2027-01-08",
+    "title": "Día 8 de enero",
+    "title_la": "Die Octava Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-09",
+   "liturgy": {
+    "date": "2027-01-09",
+    "title": "Sanctæ Mariæ Sabbato",
+    "title_la": "Sanctæ Mariæ Sabbato",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-10",
+   "liturgy": {
+    "date": "2027-01-10",
+    "title": "Sagrada Familia de Jesús, María y José",
+    "title_la": "Sanctæ Familiæ Jesu Mariæ Joseph",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-11",
+   "liturgy": {
+    "date": "2027-01-11",
+    "title": "Día 11 de enero",
+    "title_la": "Die Undecima Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-12",
+   "liturgy": {
+    "date": "2027-01-12",
+    "title": "Día 12 de enero",
+    "title_la": "Die Duodecima Januarii",
+    "class": "IV",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-13",
+   "liturgy": {
+    "date": "2027-01-13",
+    "title": "Conmemoración del Bautismo de Nuestro Señor Jesucristo",
+    "title_la": "Commemoratio Baptismatis Domini Nostri Jesu Christi",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-14",
+   "liturgy": {
+    "date": "2027-01-14",
+    "title": "S. Hilario, Obispo, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Hilarii Episcopi Confessoris Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-15",
+   "liturgy": {
+    "date": "2027-01-15",
+    "title": "S. Pablo, Primer Ermitaño y Confesor",
+    "title_la": "S. Pauli Primi Eremitæ et Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-16",
+   "liturgy": {
+    "date": "2027-01-16",
+    "title": "S. Marcelo, Papa y Mártir",
+    "title_la": "S. Marcelli Papæ et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-17",
+   "liturgy": {
+    "date": "2027-01-17",
+    "title": "Domingo II después de Epifanía",
+    "title_la": "Dominica II post Epiphaniam",
+    "class": "II",
+    "color": "verde",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-18",
+   "liturgy": {
+    "date": "2027-01-18",
+    "title": "Lunes en la semana II después de Epifanía",
+    "title_la": "Feria II infra Hebdomadam II post Epiphaniam",
+    "class": "IV",
+    "color": "verde",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-19",
+   "liturgy": {
+    "date": "2027-01-19",
+    "title": "Martes en la semana II después de Epifanía",
+    "title_la": "Feria III infra Hebdomadam II post Epiphaniam",
+    "class": "IV",
+    "color": "verde",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-20",
+   "liturgy": {
+    "date": "2027-01-20",
+    "title": "Ss. Fabián y Sebastián, Mártires",
+    "title_la": "Ss. Fabiani et Sebastiani Martyrum",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-21",
+   "liturgy": {
+    "date": "2027-01-21",
+    "title": "Sta. Inés, Virgen y Mártir",
+    "title_la": "S. Agnetis Virginis et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-22",
+   "liturgy": {
+    "date": "2027-01-22",
+    "title": "Ss. Vicente y Anastasio, Mártires",
+    "title_la": "Ss. Vincentii et Anastasii Martyrum",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-23",
+   "liturgy": {
+    "date": "2027-01-23",
+    "title": "S. Raimundo de Peñafort, Confesor",
+    "title_la": "S. Raymundi de Peñafort Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-24",
+   "liturgy": {
+    "date": "2027-01-24",
+    "title": "Domingo de Septuagésima",
+    "title_la": "Dominica in Septuagesima",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-25",
+   "liturgy": {
+    "date": "2027-01-25",
+    "title": "Conversión de S. Pablo, Apóstol",
+    "title_la": "In Conversione S. Pauli Apostoli",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-26",
+   "liturgy": {
+    "date": "2027-01-26",
+    "title": "S. Policarpo, Obispo y Mártir",
+    "title_la": "S. Polycarpi Episcopi et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-27",
+   "liturgy": {
+    "date": "2027-01-27",
+    "title": "S. Juan Crisóstomo, Obispo, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Joannis Chrysostomi Episcopi Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-28",
+   "liturgy": {
+    "date": "2027-01-28",
+    "title": "S. Pedro Nolasco, Confesor",
+    "title_la": "S. Petri Nolasci Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-29",
+   "liturgy": {
+    "date": "2027-01-29",
+    "title": "S. Francisco de Sales, Obispo, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Francisci Salesii Episcopi Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-30",
+   "liturgy": {
+    "date": "2027-01-30",
+    "title": "Sta. Martina, Virgen y Mártir",
+    "title_la": "S. Martinæ Virginis et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-01-31",
+   "liturgy": {
+    "date": "2027-01-31",
+    "title": "Domingo de Sexagésima",
+    "title_la": "Dominica in Sexagesima",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-01",
+   "liturgy": {
+    "date": "2027-02-01",
+    "title": "S. Ignacio, Obispo y Mártir",
+    "title_la": "S. Ignatii Episcopi et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-02",
+   "liturgy": {
+    "date": "2027-02-02",
+    "title": "Purificación de la Bienaventurada Virgen María",
+    "title_la": "In Purificatione Beatæ Mariæ Virginis",
+    "class": "II",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-03",
+   "liturgy": {
+    "date": "2027-02-03",
+    "title": "Miércoles en la semana de Sexagésima",
+    "title_la": "Feria IV infra Hebdomadam Sexagesimæ",
+    "class": "IV",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-04",
+   "liturgy": {
+    "date": "2027-02-04",
+    "title": "S. Andrés Corsini, Obispo y Confesor",
+    "title_la": "S. Andreæ Corsini Episcopi et Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-05",
+   "liturgy": {
+    "date": "2027-02-05",
+    "title": "Sta. Águeda, Virgen y Mártir",
+    "title_la": "S. Agathæ Virginis et Martyris",
+    "class": "III",
+    "color": "rojo",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:20",
+     "kind": "Vía Crucis",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Hora Santa",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-06",
+   "liturgy": {
+    "date": "2027-02-06",
+    "title": "S. Tito, Obispo y Confesor",
+    "title_la": "S. Titi Episcopi et Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Exposición y Rosario meditado",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-07",
+   "liturgy": {
+    "date": "2027-02-07",
+    "title": "Domingo de Quincuagésima",
+    "title_la": "Dominica in Quinquagesima",
+    "class": "II",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "09:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "10:00",
+     "kind": "Misa rezada",
+     "chapel": "II"
+    },
+    {
+     "time": "11:00",
+     "kind": "Misa cantada",
+     "chapel": "I"
+    },
+    {
+     "time": "12:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "12:30",
+     "kind": "Misa cantada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-08",
+   "liturgy": {
+    "date": "2027-02-08",
+    "title": "S. Juan de Mata, Confesor",
+    "title_la": "S. Joannis de Matha Confessoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-09",
+   "liturgy": {
+    "date": "2027-02-09",
+    "title": "S. Cirilo, Obispo de Alejandría, Confesor y Doctor de la Iglesia",
+    "title_la": "S. Cyrilli Episc. Alexandrini Confessoris et Ecclesiæ Doctoris",
+    "class": "III",
+    "color": "blanco",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-10",
+   "liturgy": {
+    "date": "2027-02-10",
+    "title": "Miércoles de Ceniza",
+    "title_la": "Feria IV Cinerum",
+    "class": "I",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "19:00",
+     "kind": "Santo Rosario",
+     "chapel": "III"
+    },
+    {
+     "time": "19:30",
+     "kind": "Misa rezada",
+     "chapel": "III"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-11",
+   "liturgy": {
+    "date": "2027-02-11",
+    "title": "Jueves después de Ceniza",
+    "title_la": "Feria V post Cineres",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-12",
+   "liturgy": {
+    "date": "2027-02-12",
+    "title": "Viernes después de Ceniza",
+    "title_la": "Feria VI post Cineres",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  },
+  {
+   "date": "2027-02-13",
+   "liturgy": {
+    "date": "2027-02-13",
+    "title": "Sábado después de Ceniza",
+    "title_la": "Sabbato post Cineres",
+    "class": "III",
+    "color": "violeta",
+    "commemorations": []
+   },
+   "entries": [
+    {
+     "time": "18:30",
+     "kind": "Santo Rosario",
+     "chapel": "I"
+    },
+    {
+     "time": "19:00",
+     "kind": "Misa rezada",
+     "chapel": "I"
+    },
+    {
+     "time": "19:45",
+     "kind": "Conferencia",
+     "chapel": "I"
+    }
+   ],
+   "no_mass": [],
+   "pdf": null,
+   "notes": []
+  }
+ ],
+ "agenda": [
+  {
+   "date": "2026-11-21",
+   "kind": "Actividad",
+   "title": "Reunión de la Archicofradía San Esteban",
+   "meta": "I · 17:00",
+   "auto": true
+  },
+  {
+   "date": "2026-11-21",
+   "kind": "Formación",
+   "title": "Catecismo adultos",
+   "meta": "I · 20:00",
+   "auto": true
+  },
+  {
+   "date": "2026-11-27",
+   "kind": "Actividad",
+   "title": "Ensayo de Coro",
+   "meta": "I · 20:00",
+   "auto": true
+  },
+  {
+   "date": "2026-11-28",
+   "kind": "Formación",
+   "title": "Catecismo adultos",
+   "meta": "I · 20:00",
+   "auto": true
+  },
+  {
+   "date": "2026-11-29",
+   "kind": "Liturgia",
+   "title": "Domingo I de Adviento",
+   "meta": "I clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-11-30",
+   "kind": "Liturgia",
+   "title": "S. Andrés, Apóstol",
+   "meta": "II clase · ornamento rojo",
+   "auto": true
+  },
+  {
+   "date": "2026-12-06",
+   "kind": "Liturgia",
+   "title": "Domingo II de Adviento",
+   "meta": "I clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-08",
+   "kind": "Liturgia",
+   "title": "Inmaculada Concepción de la Bienaventurada Virgen María",
+   "meta": "I clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2026-12-13",
+   "kind": "Liturgia",
+   "title": "Domingo III de Adviento",
+   "meta": "I clase · ornamento rosa",
+   "auto": true
+  },
+  {
+   "date": "2026-12-16",
+   "kind": "Liturgia",
+   "title": "Miércoles de Témporas de Adviento",
+   "meta": "II clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-18",
+   "kind": "Liturgia",
+   "title": "Viernes de Témporas de Adviento",
+   "meta": "II clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-19",
+   "kind": "Liturgia",
+   "title": "Sábado de Témporas de Adviento",
+   "meta": "II clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-20",
+   "kind": "Liturgia",
+   "title": "Domingo IV de Adviento",
+   "meta": "I clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-21",
+   "kind": "Liturgia",
+   "title": "S. Tomás, Apóstol",
+   "meta": "II clase · ornamento rojo",
+   "auto": true
+  },
+  {
+   "date": "2026-12-24",
+   "kind": "Liturgia",
+   "title": "Vigilia de la Natividad del Señor",
+   "meta": "I clase · ornamento violeta",
+   "auto": true
+  },
+  {
+   "date": "2026-12-25",
+   "kind": "Liturgia",
+   "title": "Natividad del Señor, en la noche",
+   "meta": "I clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2026-12-26",
+   "kind": "Liturgia",
+   "title": "S. Esteban, Protomártir",
+   "meta": "II clase · ornamento rojo",
+   "auto": true
+  },
+  {
+   "date": "2026-12-28",
+   "kind": "Liturgia",
+   "title": "Ss. Inocentes",
+   "meta": "II clase · ornamento rojo",
+   "auto": true
+  },
+  {
+   "date": "2026-12-29",
+   "kind": "Liturgia",
+   "title": "Día V de la Octava de Navidad",
+   "meta": "II clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2026-12-30",
+   "kind": "Liturgia",
+   "title": "Día VI de la Octava de Navidad",
+   "meta": "II clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2026-12-31",
+   "kind": "Liturgia",
+   "title": "Día VII de la Octava de Navidad",
+   "meta": "II clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2027-01-01",
+   "kind": "Liturgia",
+   "title": "Circuncisión del Señor",
+   "meta": "I clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2027-01-06",
+   "kind": "Liturgia",
+   "title": "Epifanía del Señor",
+   "meta": "I clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2027-01-13",
+   "kind": "Liturgia",
+   "title": "Conmemoración del Bautismo de Nuestro Señor Jesucristo",
+   "meta": "II clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2027-02-02",
+   "kind": "Liturgia",
+   "title": "Purificación de la Bienaventurada Virgen María",
+   "meta": "II clase · ornamento blanco",
+   "auto": true
+  },
+  {
+   "date": "2027-02-10",
+   "kind": "Liturgia",
+   "title": "Miércoles de Ceniza",
+   "meta": "I clase · ornamento violeta",
+   "auto": true
+  }
+ ],
+ "avisos": [],
+ "checks": [
+  {
+   "date": "2026-11-22",
+   "what": "color",
+   "pdf": "blanco",
+   "calendario_1962": "verde",
+   "festividad": "Domingo XXIV y último después de Pentecostés"
+  },
+  {
+   "date": "2026-11-27",
+   "what": "color",
+   "pdf": "blanco",
+   "calendario_1962": "verde",
+   "festividad": "Viernes en la semana XXIV después de Pentecostés"
+  }
+ ]
+}

@@ -1,0 +1,798 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Misas Tradicionales BCN//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Misas Tradicionales BCN
+X-WR-TIMEZONE:Europe/Madrid
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+BEGIN:VTIMEZONE
+TZID:Europe/Madrid
+BEGIN:STANDARD
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20261118-1930-III@ad-altare-dei
+DTSTAMP:20261118T000000Z
+DTSTART;TZID=Europe/Madrid:20261118T193000
+DTEND;TZID=Europe/Madrid:20261118T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Dedicación de las Basílicas de los Ss. Apóstoles Pedro y Pablo\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261121-1900-I@ad-altare-dei
+DTSTAMP:20261121T000000Z
+DTSTART;TZID=Europe/Madrid:20261121T190000
+DTEND;TZID=Europe/Madrid:20261121T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Presentación de la Bienaventurada Virgen María\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122-0900-I@ad-altare-dei
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=Europe/Madrid:20261122T090000
+DTEND;TZID=Europe/Madrid:20261122T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo XXIV y último después de Pentecostés\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122-1000-II@ad-altare-dei
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=Europe/Madrid:20261122T100000
+DTEND;TZID=Europe/Madrid:20261122T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo XXIV y último después de Pentecostés\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122-1100-I@ad-altare-dei
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=Europe/Madrid:20261122T110000
+DTEND;TZID=Europe/Madrid:20261122T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo XXIV y último después de Pentecostés\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261122-1230-III@ad-altare-dei
+DTSTAMP:20261122T000000Z
+DTSTART;TZID=Europe/Madrid:20261122T123000
+DTEND;TZID=Europe/Madrid:20261122T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo XXIV y último después de Pentecostés\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261125-1930-III@ad-altare-dei
+DTSTAMP:20261125T000000Z
+DTSTART;TZID=Europe/Madrid:20261125T193000
+DTEND;TZID=Europe/Madrid:20261125T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Sta. Catalina\, Virgen y Mártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261127-1900-I@ad-altare-dei
+DTSTAMP:20261127T000000Z
+DTSTART;TZID=Europe/Madrid:20261127T190000
+DTEND;TZID=Europe/Madrid:20261127T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Viernes en la semana XXIV después de Pentecostés\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261128-1900-I@ad-altare-dei
+DTSTAMP:20261128T000000Z
+DTSTART;TZID=Europe/Madrid:20261128T190000
+DTEND;TZID=Europe/Madrid:20261128T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sanctæ Mariæ Sabbato\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129-0900-I@ad-altare-dei
+DTSTAMP:20261129T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T090000
+DTEND;TZID=Europe/Madrid:20261129T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo I de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129-1000-II@ad-altare-dei
+DTSTAMP:20261129T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T100000
+DTEND;TZID=Europe/Madrid:20261129T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo I de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129-1100-I@ad-altare-dei
+DTSTAMP:20261129T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T110000
+DTEND;TZID=Europe/Madrid:20261129T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo I de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261129-1230-III@ad-altare-dei
+DTSTAMP:20261129T000000Z
+DTSTART;TZID=Europe/Madrid:20261129T123000
+DTEND;TZID=Europe/Madrid:20261129T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo I de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261202-1930-III@ad-altare-dei
+DTSTAMP:20261202T000000Z
+DTSTART;TZID=Europe/Madrid:20261202T193000
+DTEND;TZID=Europe/Madrid:20261202T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Sta. Bibiana\, Virgen y Mártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261204-1900-I@ad-altare-dei
+DTSTAMP:20261204T000000Z
+DTSTART;TZID=Europe/Madrid:20261204T190000
+DTEND;TZID=Europe/Madrid:20261204T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Pedro Crisólogo\, Obispo\, Confesor y Doctor de la Iglesia\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261205-1900-I@ad-altare-dei
+DTSTAMP:20261205T000000Z
+DTSTART;TZID=Europe/Madrid:20261205T190000
+DTEND;TZID=Europe/Madrid:20261205T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sábado en la semana I de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206-0900-I@ad-altare-dei
+DTSTAMP:20261206T000000Z
+DTSTART;TZID=Europe/Madrid:20261206T090000
+DTEND;TZID=Europe/Madrid:20261206T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206-1000-II@ad-altare-dei
+DTSTAMP:20261206T000000Z
+DTSTART;TZID=Europe/Madrid:20261206T100000
+DTEND;TZID=Europe/Madrid:20261206T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206-1100-I@ad-altare-dei
+DTSTAMP:20261206T000000Z
+DTSTART;TZID=Europe/Madrid:20261206T110000
+DTEND;TZID=Europe/Madrid:20261206T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261206-1230-III@ad-altare-dei
+DTSTAMP:20261206T000000Z
+DTSTART;TZID=Europe/Madrid:20261206T123000
+DTEND;TZID=Europe/Madrid:20261206T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261209-1930-III@ad-altare-dei
+DTSTAMP:20261209T000000Z
+DTSTART;TZID=Europe/Madrid:20261209T193000
+DTEND;TZID=Europe/Madrid:20261209T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Miércoles en la semana II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261211-1900-I@ad-altare-dei
+DTSTAMP:20261211T000000Z
+DTSTART;TZID=Europe/Madrid:20261211T190000
+DTEND;TZID=Europe/Madrid:20261211T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Dámaso\, Papa y Confesor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261212-1900-I@ad-altare-dei
+DTSTAMP:20261212T000000Z
+DTSTART;TZID=Europe/Madrid:20261212T190000
+DTEND;TZID=Europe/Madrid:20261212T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sábado en la semana II de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261213-0900-I@ad-altare-dei
+DTSTAMP:20261213T000000Z
+DTSTART;TZID=Europe/Madrid:20261213T090000
+DTEND;TZID=Europe/Madrid:20261213T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo III de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261213-1000-II@ad-altare-dei
+DTSTAMP:20261213T000000Z
+DTSTART;TZID=Europe/Madrid:20261213T100000
+DTEND;TZID=Europe/Madrid:20261213T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo III de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261213-1100-I@ad-altare-dei
+DTSTAMP:20261213T000000Z
+DTSTART;TZID=Europe/Madrid:20261213T110000
+DTEND;TZID=Europe/Madrid:20261213T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo III de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261213-1230-III@ad-altare-dei
+DTSTAMP:20261213T000000Z
+DTSTART;TZID=Europe/Madrid:20261213T123000
+DTEND;TZID=Europe/Madrid:20261213T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo III de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261216-1930-III@ad-altare-dei
+DTSTAMP:20261216T000000Z
+DTSTART;TZID=Europe/Madrid:20261216T193000
+DTEND;TZID=Europe/Madrid:20261216T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Miércoles de Témporas de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261218-1900-I@ad-altare-dei
+DTSTAMP:20261218T000000Z
+DTSTART;TZID=Europe/Madrid:20261218T190000
+DTEND;TZID=Europe/Madrid:20261218T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Viernes de Témporas de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261219-1900-I@ad-altare-dei
+DTSTAMP:20261219T000000Z
+DTSTART;TZID=Europe/Madrid:20261219T190000
+DTEND;TZID=Europe/Madrid:20261219T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sábado de Témporas de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261220-0900-I@ad-altare-dei
+DTSTAMP:20261220T000000Z
+DTSTART;TZID=Europe/Madrid:20261220T090000
+DTEND;TZID=Europe/Madrid:20261220T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo IV de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261220-1000-II@ad-altare-dei
+DTSTAMP:20261220T000000Z
+DTSTART;TZID=Europe/Madrid:20261220T100000
+DTEND;TZID=Europe/Madrid:20261220T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo IV de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261220-1100-I@ad-altare-dei
+DTSTAMP:20261220T000000Z
+DTSTART;TZID=Europe/Madrid:20261220T110000
+DTEND;TZID=Europe/Madrid:20261220T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo IV de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261220-1230-III@ad-altare-dei
+DTSTAMP:20261220T000000Z
+DTSTART;TZID=Europe/Madrid:20261220T123000
+DTEND;TZID=Europe/Madrid:20261220T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo IV de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261223-1930-III@ad-altare-dei
+DTSTAMP:20261223T000000Z
+DTSTART;TZID=Europe/Madrid:20261223T193000
+DTEND;TZID=Europe/Madrid:20261223T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Miércoles en la semana IV de Adviento\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261225-1900-I@ad-altare-dei
+DTSTAMP:20261225T000000Z
+DTSTART;TZID=Europe/Madrid:20261225T190000
+DTEND;TZID=Europe/Madrid:20261225T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Natividad del Señor\, en la noche\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261226-1900-I@ad-altare-dei
+DTSTAMP:20261226T000000Z
+DTSTART;TZID=Europe/Madrid:20261226T190000
+DTEND;TZID=Europe/Madrid:20261226T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Esteban\, Protomártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261227-0900-I@ad-altare-dei
+DTSTAMP:20261227T000000Z
+DTSTART;TZID=Europe/Madrid:20261227T090000
+DTEND;TZID=Europe/Madrid:20261227T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo dentro de la Octava de Navidad\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261227-1000-II@ad-altare-dei
+DTSTAMP:20261227T000000Z
+DTSTART;TZID=Europe/Madrid:20261227T100000
+DTEND;TZID=Europe/Madrid:20261227T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo dentro de la Octava de Navidad\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261227-1100-I@ad-altare-dei
+DTSTAMP:20261227T000000Z
+DTSTART;TZID=Europe/Madrid:20261227T110000
+DTEND;TZID=Europe/Madrid:20261227T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo dentro de la Octava de Navidad\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261227-1230-III@ad-altare-dei
+DTSTAMP:20261227T000000Z
+DTSTART;TZID=Europe/Madrid:20261227T123000
+DTEND;TZID=Europe/Madrid:20261227T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo dentro de la Octava de Navidad\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20261230-1930-III@ad-altare-dei
+DTSTAMP:20261230T000000Z
+DTSTART;TZID=Europe/Madrid:20261230T193000
+DTEND;TZID=Europe/Madrid:20261230T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Día VI de la Octava de Navidad\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270101-1900-I@ad-altare-dei
+DTSTAMP:20270101T000000Z
+DTSTART;TZID=Europe/Madrid:20270101T190000
+DTEND;TZID=Europe/Madrid:20270101T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Circuncisión del Señor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270102-1900-I@ad-altare-dei
+DTSTAMP:20270102T000000Z
+DTSTART;TZID=Europe/Madrid:20270102T190000
+DTEND;TZID=Europe/Madrid:20270102T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sanctæ Mariæ Sabbato\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270103-0900-I@ad-altare-dei
+DTSTAMP:20270103T000000Z
+DTSTART;TZID=Europe/Madrid:20270103T090000
+DTEND;TZID=Europe/Madrid:20270103T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Santísimo Nombre de Jesús\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270103-1000-II@ad-altare-dei
+DTSTAMP:20270103T000000Z
+DTSTART;TZID=Europe/Madrid:20270103T100000
+DTEND;TZID=Europe/Madrid:20270103T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Santísimo Nombre de Jesús\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270103-1100-I@ad-altare-dei
+DTSTAMP:20270103T000000Z
+DTSTART;TZID=Europe/Madrid:20270103T110000
+DTEND;TZID=Europe/Madrid:20270103T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Santísimo Nombre de Jesús\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270103-1230-III@ad-altare-dei
+DTSTAMP:20270103T000000Z
+DTSTART;TZID=Europe/Madrid:20270103T123000
+DTEND;TZID=Europe/Madrid:20270103T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Santísimo Nombre de Jesús\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270106-1930-III@ad-altare-dei
+DTSTAMP:20270106T000000Z
+DTSTART;TZID=Europe/Madrid:20270106T193000
+DTEND;TZID=Europe/Madrid:20270106T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Epifanía del Señor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270108-1900-I@ad-altare-dei
+DTSTAMP:20270108T000000Z
+DTSTART;TZID=Europe/Madrid:20270108T190000
+DTEND;TZID=Europe/Madrid:20270108T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Día 8 de enero\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270109-1900-I@ad-altare-dei
+DTSTAMP:20270109T000000Z
+DTSTART;TZID=Europe/Madrid:20270109T190000
+DTEND;TZID=Europe/Madrid:20270109T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sanctæ Mariæ Sabbato\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270110-0900-I@ad-altare-dei
+DTSTAMP:20270110T000000Z
+DTSTART;TZID=Europe/Madrid:20270110T090000
+DTEND;TZID=Europe/Madrid:20270110T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sagrada Familia de Jesús\, María y José\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270110-1000-II@ad-altare-dei
+DTSTAMP:20270110T000000Z
+DTSTART;TZID=Europe/Madrid:20270110T100000
+DTEND;TZID=Europe/Madrid:20270110T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Sagrada Familia de Jesús\, María y José\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270110-1100-I@ad-altare-dei
+DTSTAMP:20270110T000000Z
+DTSTART;TZID=Europe/Madrid:20270110T110000
+DTEND;TZID=Europe/Madrid:20270110T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sagrada Familia de Jesús\, María y José\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270110-1230-III@ad-altare-dei
+DTSTAMP:20270110T000000Z
+DTSTART;TZID=Europe/Madrid:20270110T123000
+DTEND;TZID=Europe/Madrid:20270110T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Sagrada Familia de Jesús\, María y José\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270113-1930-III@ad-altare-dei
+DTSTAMP:20270113T000000Z
+DTSTART;TZID=Europe/Madrid:20270113T193000
+DTEND;TZID=Europe/Madrid:20270113T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Conmemoración del Bautismo de Nuestro Señor Jesucristo\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270115-1900-I@ad-altare-dei
+DTSTAMP:20270115T000000Z
+DTSTART;TZID=Europe/Madrid:20270115T190000
+DTEND;TZID=Europe/Madrid:20270115T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Pablo\, Primer Ermitaño y Confesor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270116-1900-I@ad-altare-dei
+DTSTAMP:20270116T000000Z
+DTSTART;TZID=Europe/Madrid:20270116T190000
+DTEND;TZID=Europe/Madrid:20270116T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Marcelo\, Papa y Mártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270117-0900-I@ad-altare-dei
+DTSTAMP:20270117T000000Z
+DTSTART;TZID=Europe/Madrid:20270117T090000
+DTEND;TZID=Europe/Madrid:20270117T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo II después de Epifanía\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270117-1000-II@ad-altare-dei
+DTSTAMP:20270117T000000Z
+DTSTART;TZID=Europe/Madrid:20270117T100000
+DTEND;TZID=Europe/Madrid:20270117T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo II después de Epifanía\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270117-1100-I@ad-altare-dei
+DTSTAMP:20270117T000000Z
+DTSTART;TZID=Europe/Madrid:20270117T110000
+DTEND;TZID=Europe/Madrid:20270117T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo II después de Epifanía\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270117-1230-III@ad-altare-dei
+DTSTAMP:20270117T000000Z
+DTSTART;TZID=Europe/Madrid:20270117T123000
+DTEND;TZID=Europe/Madrid:20270117T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo II después de Epifanía\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270120-1930-III@ad-altare-dei
+DTSTAMP:20270120T000000Z
+DTSTART;TZID=Europe/Madrid:20270120T193000
+DTEND;TZID=Europe/Madrid:20270120T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Ss. Fabián y Sebastián\, Mártires\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270122-1900-I@ad-altare-dei
+DTSTAMP:20270122T000000Z
+DTSTART;TZID=Europe/Madrid:20270122T190000
+DTEND;TZID=Europe/Madrid:20270122T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Ss. Vicente y Anastasio\, Mártires\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270123-1900-I@ad-altare-dei
+DTSTAMP:20270123T000000Z
+DTSTART;TZID=Europe/Madrid:20270123T190000
+DTEND;TZID=Europe/Madrid:20270123T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Raimundo de Peñafort\, Confesor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-0900-I@ad-altare-dei
+DTSTAMP:20270124T000000Z
+DTSTART;TZID=Europe/Madrid:20270124T090000
+DTEND;TZID=Europe/Madrid:20270124T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Septuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-1000-II@ad-altare-dei
+DTSTAMP:20270124T000000Z
+DTSTART;TZID=Europe/Madrid:20270124T100000
+DTEND;TZID=Europe/Madrid:20270124T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo de Septuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-1100-I@ad-altare-dei
+DTSTAMP:20270124T000000Z
+DTSTART;TZID=Europe/Madrid:20270124T110000
+DTEND;TZID=Europe/Madrid:20270124T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Septuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270124-1230-III@ad-altare-dei
+DTSTAMP:20270124T000000Z
+DTSTART;TZID=Europe/Madrid:20270124T123000
+DTEND;TZID=Europe/Madrid:20270124T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo de Septuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270127-1930-III@ad-altare-dei
+DTSTAMP:20270127T000000Z
+DTSTART;TZID=Europe/Madrid:20270127T193000
+DTEND;TZID=Europe/Madrid:20270127T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:S. Juan Crisóstomo\, Obispo\, Confesor y Doctor de la Iglesia\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270129-1900-I@ad-altare-dei
+DTSTAMP:20270129T000000Z
+DTSTART;TZID=Europe/Madrid:20270129T190000
+DTEND;TZID=Europe/Madrid:20270129T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Francisco de Sales\, Obispo\, Confesor y Doctor de la Iglesia\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270130-1900-I@ad-altare-dei
+DTSTAMP:20270130T000000Z
+DTSTART;TZID=Europe/Madrid:20270130T190000
+DTEND;TZID=Europe/Madrid:20270130T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sta. Martina\, Virgen y Mártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-0900-I@ad-altare-dei
+DTSTAMP:20270131T000000Z
+DTSTART;TZID=Europe/Madrid:20270131T090000
+DTEND;TZID=Europe/Madrid:20270131T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Sexagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-1000-II@ad-altare-dei
+DTSTAMP:20270131T000000Z
+DTSTART;TZID=Europe/Madrid:20270131T100000
+DTEND;TZID=Europe/Madrid:20270131T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo de Sexagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-1100-I@ad-altare-dei
+DTSTAMP:20270131T000000Z
+DTSTART;TZID=Europe/Madrid:20270131T110000
+DTEND;TZID=Europe/Madrid:20270131T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Sexagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270131-1230-III@ad-altare-dei
+DTSTAMP:20270131T000000Z
+DTSTART;TZID=Europe/Madrid:20270131T123000
+DTEND;TZID=Europe/Madrid:20270131T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo de Sexagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270203-1930-III@ad-altare-dei
+DTSTAMP:20270203T000000Z
+DTSTART;TZID=Europe/Madrid:20270203T193000
+DTEND;TZID=Europe/Madrid:20270203T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Miércoles en la semana de Sexagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270205-1900-I@ad-altare-dei
+DTSTAMP:20270205T000000Z
+DTSTART;TZID=Europe/Madrid:20270205T190000
+DTEND;TZID=Europe/Madrid:20270205T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sta. Águeda\, Virgen y Mártir\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270206-1900-I@ad-altare-dei
+DTSTAMP:20270206T000000Z
+DTSTART;TZID=Europe/Madrid:20270206T190000
+DTEND;TZID=Europe/Madrid:20270206T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:S. Tito\, Obispo y Confesor\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-0900-I@ad-altare-dei
+DTSTAMP:20270207T000000Z
+DTSTART;TZID=Europe/Madrid:20270207T090000
+DTEND;TZID=Europe/Madrid:20270207T094500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Quincuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-1000-II@ad-altare-dei
+DTSTAMP:20270207T000000Z
+DTSTART;TZID=Europe/Madrid:20270207T100000
+DTEND;TZID=Europe/Madrid:20270207T104500
+SUMMARY:Misa rezada · Vallcarca
+LOCATION:Parròquia de Sant Jordi de Vallcarca\, Viaducte de Vallcarca\, 7\, 08023 Barcelona
+DESCRIPTION:Domingo de Quincuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-1100-I@ad-altare-dei
+DTSTAMP:20270207T000000Z
+DTSTART;TZID=Europe/Madrid:20270207T110000
+DTEND;TZID=Europe/Madrid:20270207T121500
+SUMMARY:Misa cantada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Domingo de Quincuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270207-1230-III@ad-altare-dei
+DTSTAMP:20270207T000000Z
+DTSTART;TZID=Europe/Madrid:20270207T123000
+DTEND;TZID=Europe/Madrid:20270207T134500
+SUMMARY:Misa cantada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Domingo de Quincuagésima\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270210-1930-III@ad-altare-dei
+DTSTAMP:20270210T000000Z
+DTSTART;TZID=Europe/Madrid:20270210T193000
+DTEND;TZID=Europe/Madrid:20270210T201500
+SUMMARY:Misa rezada · Sant Gervasi
+LOCATION:Capilla de Nuestra Señora de la Merced y San Pedro Apóstol\, C/ Laforja\, 21\, 08006 Barcelona
+DESCRIPTION:Miércoles de Ceniza\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270212-1900-I@ad-altare-dei
+DTSTAMP:20270212T000000Z
+DTSTART;TZID=Europe/Madrid:20270212T190000
+DTEND;TZID=Europe/Madrid:20270212T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Viernes después de Ceniza\nConfirma siempre con la capilla.
+END:VEVENT
+BEGIN:VEVENT
+UID:20270213-1900-I@ad-altare-dei
+DTSTAMP:20270213T000000Z
+DTSTART;TZID=Europe/Madrid:20270213T190000
+DTEND;TZID=Europe/Madrid:20270213T194500
+SUMMARY:Misa rezada · Sants
+LOCATION:Capilla Nuestra Señora de la Merced\, C/ Vallespir\, 118\, 08014 Barcelona
+DESCRIPTION:Sábado después de Ceniza\nConfirma siempre con la capilla.
+END:VEVENT
+END:VCALENDAR

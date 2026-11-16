@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f7f5f1" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+<meta name="author" content="Raigada-García">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Misas BCN">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="icon" href="icon-192.png">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}</style>
+<title>Misas Tradicionales BCN · Misa en latín en Barcelona</title>
+<meta name="description" content="Horarios de las Misas tradicionales (Misa en latín, rito de 1962) en Barcelona: Sants, Vallcarca y Laforja. Mapa, calendario litúrgico y guía para ir por primera vez.">
+<meta property="og:title" content="Misas Tradicionales BCN">
+<meta property="og:description" content="Horarios de la Misa tradicional en latín en Barcelona, actualizados cada día.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<link rel="stylesheet" href="vendor/fonts.css">
+<script src="vendor/leaflet.min.js"></script>
+<style>/* Leaflet 1.9.4 (BSD-2-Clause) */
+.leaflet-pane, .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-tile-container, .leaflet-pane > svg, .leaflet-pane > canvas, .leaflet-zoom-box, .leaflet-image-layer, .leaflet-layer { position: absolute; left: 0; top: 0; } .leaflet-container { overflow: hidden; } .leaflet-tile, .leaflet-marker-icon, .leaflet-marker-shadow { -webkit-user-select: none; -moz-user-select: none; user-select: none; -webkit-user-drag: none; } .leaflet-tile::selection { background: transparent; } .leaflet-safari .leaflet-tile { image-rendering: -webkit-optimize-contrast; } .leaflet-safari .leaflet-tile-container { width: 1600px; height: 1600px; -webkit-transform-origin: 0 0; } .leaflet-marker-icon, .leaflet-marker-shadow { display: block; } .leaflet-container .leaflet-overlay-pane svg { max-width: none !important; max-height: none !important; } .leaflet-container .leaflet-marker-pane img, .leaflet-container .leaflet-shadow-pane img, .leaflet-container .leaflet-tile-pane img, .leaflet-container img.leaflet-image-layer, .leaflet-container .leaflet-tile { max-width: none !important; max-height: none !important; width: auto; padding: 0; } .leaflet-container img.leaflet-tile { mix-blend-mode: plus-lighter; } .leaflet-container.leaflet-touch-zoom { -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; } .leaflet-container.leaflet-touch-drag { -ms-touch-action: pinch-zoom; touch-action: none; touch-action: pinch-zoom; } .leaflet-container.leaflet-touch-drag.leaflet-touch-zoom { -ms-touch-action: none; touch-action: none; } .leaflet-container { -webkit-tap-highlight-color: transparent; } .leaflet-container a { -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); } .leaflet-tile { filter: inherit; visibility: hidden; } .leaflet-tile-loaded { visibility: inherit; } .leaflet-zoom-box { width: 0; height: 0; -moz-box-sizing: border-box; box-sizing: border-box; z-index: 800; } .leaflet-overlay-pane svg { -moz-user-select: none; } .leaflet-pane { z-index: 400; } .leaflet-tile-pane { z-index: 200; } .leaflet-overlay-pane { z-index: 400; } .leaflet-shadow-pane { z-index: 500; } .leaflet-marker-pane { z-index: 600; } .leaflet-tooltip-pane { z-index: 650; } .leaflet-popup-pane { z-index: 700; } .leaflet-map-pane canvas { z-index: 100; } .leaflet-map-pane svg { z-index: 200; } .leaflet-vml-shape { width: 1px; height: 1px; } .lvml { behavior: url(#default#VML); display: inline-block; position: absolute; } .leaflet-control { position: relative; z-index: 800; pointer-events: visiblePainted; pointer-events: auto; } .leaflet-top, .leaflet-bottom { position: absolute; z-index: 1000; pointer-events: none; } .leaflet-top { top: 0; } .leaflet-right { right: 0; } .leaflet-bottom { bottom: 0; } .leaflet-left { left: 0; } .leaflet-control { float: left; clear: both; } .leaflet-right .leaflet-control { float: right; } .leaflet-top .leaflet-control { margin-top: 10px; } .leaflet-bottom .leaflet-control { margin-bottom: 10px; } .leaflet-left .leaflet-control { margin-left: 10px; } .leaflet-right .leaflet-control { margin-right: 10px; } .leaflet-fade-anim .leaflet-popup { opacity: 0; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; transition: opacity 0.2s linear; } .leaflet-fade-anim .leaflet-map-pane .leaflet-popup { opacity: 1; } .leaflet-zoom-animated { -webkit-transform-origin: 0 0; -ms-transform-origin: 0 0; transform-origin: 0 0; } svg.leaflet-zoom-animated { will-change: transform; } .leaflet-zoom-anim .leaflet-zoom-animated { -webkit-transition: -webkit-transform 0.25s cubic-bezier(0,0,0.25,1); -moz-transition: -moz-transform 0.25s cubic-bezier(0,0,0.25,1); transition: transform 0.25s cubic-bezier(0,0,0.25,1); } .leaflet-zoom-anim .leaflet-tile, .leaflet-pan-anim .leaflet-tile { -webkit-transition: none; -moz-transition: none; transition: none; } .leaflet-zoom-anim .leaflet-zoom-hide { visibility: hidden; } .leaflet-interactive { cursor: pointer; } .leaflet-grab { cursor: -webkit-grab; cursor: -moz-grab; cursor: grab; } .leaflet-crosshair, .leaflet-crosshair .leaflet-interactive { cursor: crosshair; } .leaflet-popup-pane, .leaflet-control { cursor: auto; } .leaflet-dragging .leaflet-grab, .leaflet-dragging .leaflet-grab .leaflet-interactive, .leaflet-dragging .leaflet-marker-draggable { cursor: move; cursor: -webkit-grabbing; cursor: -moz-grabbing; cursor: grabbing; } .leaflet-marker-icon, .leaflet-marker-shadow, .leaflet-image-layer, .leaflet-pane > svg path, .leaflet-tile-container { pointer-events: none; } .leaflet-marker-icon.leaflet-interactive, .leaflet-image-layer.leaflet-interactive, .leaflet-pane > svg path.leaflet-interactive, svg.leaflet-image-layer.leaflet-interactive path { pointer-events: visiblePainted; pointer-events: auto; } .leaflet-container { background: #ddd; outline-offset: 1px; } .leaflet-container a { color: #0078A8; } .leaflet-zoom-box { border: 2px dotted #38f; background: rgba(255,255,255,0.5); } .leaflet-container { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 12px; font-size: 0.75rem; line-height: 1.5; } .leaflet-bar { box-shadow: 0 1px 5px rgba(0,0,0,0.65); border-radius: 4px; } .leaflet-bar a { background-color: #fff; border-bottom: 1px solid #ccc; width: 26px; height: 26px; line-height: 26px; display: block; text-align: center; text-decoration: none; color: black; } .leaflet-bar a, .leaflet-control-layers-toggle { background-position: 50% 50%; background-repeat: no-repeat; display: block; } .leaflet-bar a:hover, .leaflet-bar a:focus { background-color: #f4f4f4; } .leaflet-bar a:first-child { border-top-left-radius: 4px; border-top-right-radius: 4px; } .leaflet-bar a:last-child { border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; border-bottom: none; } .leaflet-bar a.leaflet-disabled { cursor: default; background-color: #f4f4f4; color: #bbb; } .leaflet-touch .leaflet-bar a { width: 30px; height: 30px; line-height: 30px; } .leaflet-touch .leaflet-bar a:first-child { border-top-left-radius: 2px; border-top-right-radius: 2px; } .leaflet-touch .leaflet-bar a:last-child { border-bottom-left-radius: 2px; border-bottom-right-radius: 2px; } .leaflet-control-zoom-in, .leaflet-control-zoom-out { font: bold 18px 'Lucida Console', Monaco, monospace; text-indent: 1px; } .leaflet-touch .leaflet-control-zoom-in, .leaflet-touch .leaflet-control-zoom-out { font-size: 22px; } .leaflet-control-layers { box-shadow: 0 1px 5px rgba(0,0,0,0.4); background: #fff; border-radius: 5px; } .leaflet-control-layers-toggle { background-image: url(images/layers.png); width: 36px; height: 36px; } .leaflet-retina .leaflet-control-layers-toggle { background-image: url(images/layers-2x.png); background-size: 26px 26px; } .leaflet-touch .leaflet-control-layers-toggle { width: 44px; height: 44px; } .leaflet-control-layers .leaflet-control-layers-list, .leaflet-control-layers-expanded .leaflet-control-layers-toggle { display: none; } .leaflet-control-layers-expanded .leaflet-control-layers-list { display: block; position: relative; } .leaflet-control-layers-expanded { padding: 6px 10px 6px 6px; color: #333; background: #fff; } .leaflet-control-layers-scrollbar { overflow-y: scroll; overflow-x: hidden; padding-right: 5px; } .leaflet-control-layers-selector { margin-top: 2px; position: relative; top: 1px; } .leaflet-control-layers label { display: block; font-size: 13px; font-size: 1.08333em; } .leaflet-control-layers-separator { height: 0; border-top: 1px solid #ddd; margin: 5px -10px 5px -6px; }  .leaflet-container .leaflet-control-attribution { background: #fff; background: rgba(255, 255, 255, 0.8); margin: 0; } .leaflet-control-attribution, .leaflet-control-scale-line { padding: 0 5px; color: #333; line-height: 1.4; } .leaflet-control-attribution a { text-decoration: none; } .leaflet-control-attribution a:hover, .leaflet-control-attribution a:focus { text-decoration: underline; } .leaflet-attribution-flag { display: inline !important; vertical-align: baseline !important; width: 1em; height: 0.6669em; } .leaflet-left .leaflet-control-scale { margin-left: 5px; } .leaflet-bottom .leaflet-control-scale { margin-bottom: 5px; } .leaflet-control-scale-line { border: 2px solid #777; border-top: none; line-height: 1.1; padding: 2px 5px 1px; white-space: nowrap; -moz-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.8); text-shadow: 1px 1px #fff; } .leaflet-control-scale-line:not(:first-child) { border-top: 2px solid #777; border-bottom: none; margin-top: -2px; } .leaflet-control-scale-line:not(:first-child):not(:last-child) { border-bottom: 2px solid #777; } .leaflet-touch .leaflet-control-attribution, .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { box-shadow: none; } .leaflet-touch .leaflet-control-layers, .leaflet-touch .leaflet-bar { border: 2px solid rgba(0,0,0,0.2); background-clip: padding-box; } .leaflet-popup { position: absolute; text-align: center; margin-bottom: 20px; } .leaflet-popup-content-wrapper { padding: 1px; text-align: left; border-radius: 12px; } .leaflet-popup-content { margin: 13px 24px 13px 20px; line-height: 1.3; font-size: 13px; font-size: 1.08333em; min-height: 1px; } .leaflet-popup-content p { margin: 17px 0; margin: 1.3em 0; } .leaflet-popup-tip-container { width: 40px; height: 20px; position: absolute; left: 50%; margin-top: -1px; margin-left: -20px; overflow: hidden; pointer-events: none; } .leaflet-popup-tip { width: 17px; height: 17px; padding: 1px; margin: -10px auto 0; pointer-events: auto; -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); } .leaflet-popup-content-wrapper, .leaflet-popup-tip { background: white; color: #333; box-shadow: 0 3px 14px rgba(0,0,0,0.4); } .leaflet-container a.leaflet-popup-close-button { position: absolute; top: 0; right: 0; border: none; text-align: center; width: 24px; height: 24px; font: 16px/24px Tahoma, Verdana, sans-serif; color: #757575; text-decoration: none; background: transparent; } .leaflet-container a.leaflet-popup-close-button:hover, .leaflet-container a.leaflet-popup-close-button:focus { color: #585858; } .leaflet-popup-scrolled { overflow: auto; } .leaflet-oldie .leaflet-popup-content-wrapper { -ms-zoom: 1; } .leaflet-oldie .leaflet-popup-tip { width: 24px; margin: 0 auto; -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678)"; filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.70710678, M12=0.70710678, M21=-0.70710678, M22=0.70710678); } .leaflet-oldie .leaflet-control-zoom, .leaflet-oldie .leaflet-control-layers, .leaflet-oldie .leaflet-popup-content-wrapper, .leaflet-oldie .leaflet-popup-tip { border: 1px solid #999; } .leaflet-div-icon { background: #fff; border: 1px solid #666; } .leaflet-tooltip { position: absolute; padding: 6px; background-color: #fff; border: 1px solid #fff; border-radius: 3px; color: #222; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; pointer-events: none; box-shadow: 0 1px 3px rgba(0,0,0,0.4); } .leaflet-tooltip.leaflet-interactive { cursor: pointer; pointer-events: auto; } .leaflet-tooltip-top:before, .leaflet-tooltip-bottom:before, .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { position: absolute; pointer-events: none; border: 6px solid transparent; background: transparent; content: ""; } .leaflet-tooltip-bottom { margin-top: 6px; } .leaflet-tooltip-top { margin-top: -6px; } .leaflet-tooltip-bottom:before, .leaflet-tooltip-top:before { left: 50%; margin-left: -6px; } .leaflet-tooltip-top:before { bottom: 0; margin-bottom: -12px; border-top-color: #fff; } .leaflet-tooltip-bottom:before { top: 0; margin-top: -12px; margin-left: -6px; border-bottom-color: #fff; } .leaflet-tooltip-left { margin-left: -6px; } .leaflet-tooltip-right { margin-left: 6px; } .leaflet-tooltip-left:before, .leaflet-tooltip-right:before { top: 50%; margin-top: -6px; } .leaflet-tooltip-left:before { right: 0; margin-right: -12px; border-left-color: #fff; } .leaflet-tooltip-right:before { left: 0; margin-left: -12px; border-right-color: #fff; } @media print { .leaflet-control { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }</style>
+<style>
+/* Layout: columna única de app (≤ 600 px), título grande arriba, listas agrupadas tipo iOS y
+   barra de pestañas translúcida abajo. El acento cambia con el color litúrgico del día. */
+:root {
+  --bg: #f2f2f4;
+  --card: #ffffff;
+  --card-2: #f7f7f8;
+  --text: #1d1d1f;
+  --text-2: #5f5f66;
+  --text-3: #86868c;
+  --sep: rgba(60, 60, 67, 0.16);
+  --fill: rgba(118, 118, 128, 0.12);
+  --fill-2: rgba(118, 118, 128, 0.2);
+  --bar: rgba(249, 249, 250, 0.78);
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06);
+  --gold: #8f6a2e;
+  --lit-blanco: #8f6a2e; --lit-verde: #2b7a4b; --lit-violeta: #6b3fae; --lit-rojo: #b9262d;
+  --lit-negro: #3a3a3c; --lit-rosa: #b8406f;
+  --swatch-blanco: #fbfaf7; --swatch-verde: #2f8a55; --swatch-violeta: #6e44b3; --swatch-rojo: #c22d33;
+  --swatch-negro: #1d1d1f; --swatch-rosa: #e08fb0;
+  --ch-I: #3c6e9f; --ch-II: #2e8379; --ch-III: #a2582b;
+  --warn-bg: #fff4e0; --warn-fg: #7a4a00;
+  --live: #d92d20;
+  --map-land: #f4f3f0; --map-park: #dfeedd; --map-road: #ffffff; --map-road-edge: #e2e0db;
+  --map-major: #fbe7b8; --map-subway: #c9c5d8; --map-label: #8a8a90;
+  --accent: var(--lit-blanco);
+  --font-display: "EB Garamond", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", Roboto, system-ui, sans-serif;
+  --r-lg: 18px; --r-md: 12px; --r-sm: 8px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #000000; --card: #1c1c1e; --card-2: #232325; --text: #f5f5f7; --text-2: #a8a8ae; --text-3: #7c7c82;
+    --sep: rgba(84, 84, 88, 0.55); --fill: rgba(118, 118, 128, 0.24); --fill-2: rgba(118, 118, 128, 0.34);
+    --bar: rgba(22, 22, 24, 0.78); --shadow: none; --gold: #dcb36f;
+    --lit-blanco: #dcb36f; --lit-verde: #5ccb88; --lit-violeta: #b892f5; --lit-rojo: #ff6b6b; --lit-negro: #c7c7cc; --lit-rosa: #ff8fbd;
+    --swatch-blanco: #f5f3ee; --swatch-verde: #3fae6c; --swatch-violeta: #9670dd; --swatch-rojo: #e2484d; --swatch-negro: #0a0a0a; --swatch-rosa: #e99abb;
+    --ch-I: #8bb9e8; --ch-II: #6fcbbf; --ch-III: #eba277;
+    --warn-bg: #3a2a0c; --warn-fg: #ffd28a; --live: #ff5a4e;
+    --map-land: #1b1b1d; --map-park: #1f2a21; --map-road: #3a3a3e; --map-road-edge: #2a2a2d;
+    --map-major: #4a4232; --map-subway: #4a4660; --map-label: #8e8e94;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #000000; --card: #1c1c1e; --card-2: #232325; --text: #f5f5f7; --text-2: #a8a8ae; --text-3: #7c7c82;
+  --sep: rgba(84, 84, 88, 0.55); --fill: rgba(118, 118, 128, 0.24); --fill-2: rgba(118, 118, 128, 0.34);
+  --bar: rgba(22, 22, 24, 0.78); --shadow: none; --gold: #dcb36f;
+  --lit-blanco: #dcb36f; --lit-verde: #5ccb88; --lit-violeta: #b892f5; --lit-rojo: #ff6b6b; --lit-negro: #c7c7cc; --lit-rosa: #ff8fbd;
+  --swatch-blanco: #f5f3ee; --swatch-verde: #3fae6c; --swatch-violeta: #9670dd; --swatch-rojo: #e2484d; --swatch-negro: #0a0a0a; --swatch-rosa: #e99abb;
+  --ch-I: #8bb9e8; --ch-II: #6fcbbf; --ch-III: #eba277;
+  --warn-bg: #3a2a0c; --warn-fg: #ffd28a; --live: #ff5a4e;
+  --map-land: #1b1b1d; --map-park: #1f2a21; --map-road: #3a3a3e; --map-road-edge: #2a2a2d;
+  --map-major: #4a4232; --map-subway: #4a4660; --map-label: #8e8e94;
+  color-scheme: dark;
+}
+:root[data-lit="verde"] { --accent: var(--lit-verde); }
+:root[data-lit="violeta"] { --accent: var(--lit-violeta); }
+:root[data-lit="rojo"] { --accent: var(--lit-rojo); }
+:root[data-lit="negro"] { --accent: var(--lit-negro); }
+:root[data-lit="rosa"] { --accent: var(--lit-rosa); }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { background: var(--bg); -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-ui); font-size: 16px; line-height: 1.4; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; }
+a { color: var(--accent); text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+h1, h2, h3 { margin: 0; font-weight: 600; text-wrap: balance; }
+.tnum { font-variant-numeric: tabular-nums; }
+.serif { font-family: var(--font-display); }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--text-3); }
+.muted { color: var(--text-2); }
+.faint { color: var(--text-3); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bar); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); }
+.app { max-width: 600px; margin: 0 auto; min-height: 100vh; }
+.wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+main { padding-bottom: calc(100px + env(safe-area-inset-bottom, 0px)); }
+
+/* cabecera compacta que aparece al hacer scroll */
+.topbar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; height: 48px; display: flex; align-items: center; justify-content: center; background: var(--bar); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: .5px solid transparent; transition: border-color .2s; }
+.topbar.scrolled { border-bottom-color: var(--sep); }
+.topbar .t { font-weight: 600; font-size: 16px; opacity: 0; transform: translateY(4px); transition: opacity .2s, transform .2s; }
+.topbar.scrolled .t { opacity: 1; transform: none; }
+.topbar .back { position: absolute; left: max(8px, env(safe-area-inset-left, 0px)); display: flex; align-items: center; gap: 2px; font-size: 16px; color: var(--accent); min-height: 44px; padding: 0 8px; }
+.topbar .right { position: absolute; right: max(8px, env(safe-area-inset-right, 0px)); display: flex; gap: 2px; }
+.icon-btn { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; color: var(--accent); position: relative; }
+.icon-btn:active { background: var(--fill); }
+.badge { position: absolute; top: 9px; right: 9px; width: 8px; height: 8px; border-radius: 50%; background: var(--live); }
+
+.largetitle { padding-top: 6px; padding-bottom: 14px; }
+.largetitle h1 { font-size: 34px; letter-spacing: -.02em; line-height: 1.1; }
+.largetitle .sub { margin-top: 4px; font-size: 15px; color: var(--text-2); }
+
+/* tarjetas y listas agrupadas */
+.card { background: var(--card); border-radius: var(--r-lg); box-shadow: var(--shadow); overflow: hidden; }
+.section { margin-top: 26px; }
+.section-h { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; padding: 0 4px 8px; }
+.section-h h2 { font-size: 21px; letter-spacing: -.01em; }
+.section-h a, .section-h button { font-size: 15px; color: var(--accent); }
+.list { background: var(--card); border-radius: var(--r-lg); box-shadow: var(--shadow); overflow: hidden; }
+.row { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; position: relative; color: var(--text); width: 100%; text-align: left; }
+.row + .row::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; height: .5px; background: var(--sep); }
+.row.indent + .row.indent::before { left: 82px; }
+a.row:active, button.row:active { background: var(--fill); }
+.row .main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.row .main b { font-weight: 600; font-size: 16px; }
+.row .main span { font-size: 13.5px; color: var(--text-2); }
+.chev { color: var(--text-3); flex: none; }
+.time { width: 54px; flex: none; font-size: 17px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.row.minor .time, .row.minor .main b { font-weight: 400; color: var(--text-2); }
+.row.past { opacity: .45; }
+.row.past .time { text-decoration: line-through; }
+
+/* etiquetas */
+.tag { display: inline-flex; align-items: center; gap: 6px; height: 24px; padding: 0 9px; border-radius: 999px; font-size: 12.5px; font-weight: 600; white-space: nowrap; background: color-mix(in srgb, var(--c, var(--text-3)) 13%, transparent); color: var(--c, var(--text-2)); }
+.tag .dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.tag.k { --c: var(--text-2); background: var(--fill); }
+.tag.warn { background: var(--warn-bg); color: var(--warn-fg); }
+.ch-I { --c: var(--ch-I); } .ch-II { --c: var(--ch-II); } .ch-III { --c: var(--ch-III); }
+.tags { display: flex; gap: 6px; flex-wrap: wrap; }
+
+/* chips de filtro y control segmentado */
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 2px 0 4px; margin: 0 -16px; padding-left: 16px; padding-right: 16px; }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; height: 34px; padding: 0 14px; border-radius: 999px; background: var(--card); box-shadow: inset 0 0 0 .5px var(--sep); font-size: 14px; font-weight: 500; display: inline-flex; align-items: center; gap: 7px; transition: background .2s, color .2s, transform .15s; }
+.chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--text-3)); }
+.chip[aria-pressed="true"] { background: var(--text); color: var(--bg); box-shadow: none; }
+.chip:active { transform: scale(.96); }
+.seg { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--fill); border-radius: 9px; padding: 2px; position: relative; }
+.seg button { height: 32px; border-radius: 7px; font-size: 13.5px; font-weight: 500; position: relative; z-index: 1; transition: color .2s; }
+.seg button[aria-pressed="true"] { background: var(--card); box-shadow: 0 1px 3px rgba(0,0,0,.12); font-weight: 600; }
+
+/* HOY: día litúrgico */
+.litcard { position: relative; padding: 20px 18px 18px; }
+.litcard::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: var(--swatch, var(--accent)); }
+.litcard .feast { font-family: var(--font-display); font-weight: 400; font-size: 31px; line-height: 1.12; letter-spacing: -.005em; margin-top: 6px; }
+.litcard .meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+.swatch { width: 14px; height: 14px; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 1px var(--sep); flex: none; }
+.litcard .comm { font-size: 13.5px; color: var(--text-2); margin-top: 8px; }
+.litcard .propio { display: inline-flex; align-items: center; gap: 4px; margin-top: 14px; font-size: 15px; font-weight: 500; }
+
+/* próxima Misa */
+.next { padding: 18px; }
+.next .top { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.next .when { font-size: 13px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--accent); display: inline-flex; align-items: center; gap: 7px; }
+.live-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--live); box-shadow: 0 0 0 0 color-mix(in srgb, var(--live) 60%, transparent); animation: pulse 1.8s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 9px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+.next .clock { font-size: 64px; font-weight: 600; letter-spacing: -.035em; line-height: 1; margin-top: 10px; font-variant-numeric: tabular-nums; }
+.next .what { margin-top: 8px; display: flex; flex-direction: column; gap: 6px; }
+.next .what b { font-size: 18px; }
+.countdown { font-size: 14px; color: var(--text-2); font-variant-numeric: tabular-nums; }
+.actions { display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 8px; margin-top: 16px; }
+.act { height: 46px; border-radius: 12px; background: var(--fill); color: var(--accent); font-size: 15px; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; gap: 7px; transition: transform .15s var(--ease), background .2s; }
+.act.primary { background: var(--accent); color: var(--card); }
+.actions.stack { display: flex; flex-wrap: wrap; }
+.actions.stack .act { flex: 1 1 0; min-width: 0; }
+.actions.stack .act.primary { flex-basis: 100%; }
+.act:active { transform: scale(.97); }
+
+/* domingo */
+.sunday .row .time { width: 54px; }
+
+/* semana */
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; }
+.wd { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 8px 0 9px; border-radius: 14px; transition: background .2s, color .2s; }
+.wd .l { font-size: 11px; font-weight: 600; color: var(--text-3); letter-spacing: .03em; }
+.wd .n { width: 34px; height: 34px; display: grid; place-items: center; border-radius: 50%; font-size: 18px; font-weight: 600; font-variant-numeric: tabular-nums; transition: background .2s, color .2s; }
+.wd .lc { width: 6px; height: 6px; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 1px var(--sep); }
+.wd.nomass .lc { opacity: .35; }
+.wd.today .n { color: var(--accent); }
+.wd[aria-pressed="true"] .n { background: var(--text); color: var(--bg); }
+.weeknav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.weeknav button { width: 40px; height: 40px; border-radius: 50%; display: grid; place-items: center; color: var(--accent); }
+.weeknav button:disabled { color: var(--text-3); opacity: .4; cursor: default; }
+.weeknav .lbl { font-size: 15px; font-weight: 600; }
+
+.daytitle { padding: 18px 4px 10px; }
+.daytitle h2 { font-size: 22px; }
+.daytitle .lit { display: flex; align-items: center; gap: 8px; margin-top: 4px; color: var(--text-2); font-size: 14.5px; }
+.daytitle .lit .serif { font-size: 17px; color: var(--text); }
+.note { display: flex; gap: 10px; align-items: flex-start; margin-top: 10px; padding: 12px 14px; border-radius: var(--r-md); background: var(--warn-bg); color: var(--warn-fg); font-size: 14px; line-height: 1.45; }
+.empty { padding: 28px 16px; text-align: center; color: var(--text-2); font-size: 15px; }
+
+/* mapa */
+.mapwrap { position: relative; overflow: hidden; height: calc(100vh - 48px - 84px - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px)); min-height: 420px; }
+#map, .minimap { position: absolute; inset: 0; background: var(--map-land); }
+.minimap-box { position: relative; height: 190px; border-radius: var(--r-lg); overflow: hidden; box-shadow: var(--shadow); }
+.leaflet-container { font-family: var(--font-ui); background: var(--map-land); }
+.leaflet-control-attribution { font-size: 10px; background: color-mix(in srgb, var(--card) 80%, transparent) !important; color: var(--text-3); }
+.leaflet-control-attribution a { color: var(--text-2); }
+.pin { display: flex; align-items: center; gap: 6px; height: 30px; padding: 0 11px 0 6px; border-radius: 999px; background: var(--card); box-shadow: 0 2px 10px rgba(0,0,0,.22); font: 600 13px var(--font-ui); color: var(--text); white-space: nowrap; transform: translate(-50%, -50%); width: max-content; transition: transform .25s var(--ease); }
+.pin .d { width: 18px; height: 18px; border-radius: 50%; background: var(--c); display: grid; place-items: center; }
+.pin .d::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--card); }
+.pin.sel { transform: translate(-50%, -50%) scale(1.12); }
+.station { font: 600 10.5px var(--font-ui); color: var(--text-2); display: flex; align-items: center; gap: 4px; white-space: nowrap; transform: translate(-6px, -50%); width: max-content; }
+.station i { width: 13px; height: 13px; border-radius: 3px; background: #c8102e; color: #fff; font-style: normal; font-size: 9px; display: grid; place-items: center; }
+.station i.fgc { background: #f47216; }
+.nlabel { font: 500 10px var(--font-ui); color: var(--map-label); opacity: .85; letter-spacing: .03em; text-transform: uppercase; white-space: nowrap; transform: translate(-50%, -50%); width: max-content; pointer-events: none; }
+.mapcards { position: absolute; left: 0; right: 0; bottom: 12px; z-index: 500; display: flex; gap: 10px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 0 16px; scrollbar-width: none; }
+.mapcards::-webkit-scrollbar { display: none; }
+.mapcard { flex: 0 0 calc(100% - 44px); max-width: 420px; scroll-snap-align: center; background: var(--card); border-radius: var(--r-lg); box-shadow: 0 6px 24px rgba(0,0,0,.18); padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; text-align: left; }
+.mapcard b { font-size: 16.5px; }
+.mapcard .nx { font-size: 14px; color: var(--text-2); }
+.mapcard .actions { margin-top: 6px; }
+.map-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: var(--text-2); padding: 24px; text-align: center; }
+
+/* capilla */
+.gallery { display: flex; gap: 8px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin: 0 -16px; padding: 0 16px; }
+.gallery::-webkit-scrollbar { display: none; }
+.gallery button { flex: 0 0 86%; scroll-snap-align: center; aspect-ratio: 4 / 3; border-radius: var(--r-lg); overflow: hidden; background: var(--fill); max-width: 100%; }
+.gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.gallery button { position: relative; }
+.gallery .credit, .hero .credit { position: absolute; right: 8px; bottom: 8px; max-width: calc(100% - 16px); padding: 3px 8px; border-radius: 999px; background: rgba(0,0,0,.5); color: #fff; font-size: 11px; font-weight: 500; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hero { position: relative; display: block; width: 100%; aspect-ratio: 16 / 10; max-width: 100%; border-radius: var(--r-lg); overflow: hidden; background: var(--fill); box-shadow: var(--shadow); }
+.hero img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .6s var(--ease); }
+.hero:active img { transform: scale(1.02); }
+.chthumb { width: 44px; height: 44px; border-radius: 10px; object-fit: cover; flex: none; background: var(--fill); }
+.cover { position: relative; aspect-ratio: 16 / 10; max-width: 100%; border-radius: var(--r-lg); overflow: hidden; display: grid; place-items: center; text-align: center;
+  background: radial-gradient(120% 90% at 50% 0%, color-mix(in srgb, var(--c) 34%, var(--card)) 0%, var(--card) 70%); box-shadow: var(--shadow); }
+.cover .mono { font-family: var(--font-display); font-size: 54px; line-height: 1; color: var(--c); }
+.cover .cross { font-size: 22px; color: var(--c); margin-bottom: 6px; }
+.cover .soon { position: absolute; bottom: 12px; left: 0; right: 0; font-size: 12.5px; color: var(--text-3); }
+.chtitle { padding: 18px 4px 4px; display: flex; align-items: flex-start; gap: 12px; }
+.chtitle h1 { font-family: var(--font-display); font-weight: 500; font-size: 30px; line-height: 1.1; flex: 1; letter-spacing: -.005em; }
+.fav { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--fill); color: var(--text-2); flex: none; transition: transform .25s var(--ease), color .2s; }
+.fav[aria-pressed="true"] { color: #e0a100; }
+.fav:active { transform: scale(.88); }
+.kv { display: grid; grid-template-columns: 104px 1fr; gap: 12px; align-items: start; min-height: 48px; padding: 12px 16px; position: relative; font-size: 15px; }
+.kv + .kv::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; height: .5px; background: var(--sep); }
+.kv > span:first-child { color: var(--text-2); }
+.copy { margin-left: 8px; font-size: 13px; color: var(--accent); font-weight: 500; }
+.transit { display: inline-flex; align-items: center; justify-content: center; min-width: 26px; height: 20px; padding: 0 5px; border-radius: 4px; background: #c8102e; color: #fff; font-size: 11px; font-weight: 700; }
+.transit.fgc { background: #f47216; }
+
+/* agenda: mes */
+.month { padding: 14px 12px 12px; }
+.mhead { display: flex; align-items: center; justify-content: space-between; padding: 0 4px 10px; }
+.mhead b { font-size: 17px; }
+.mgrid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 2px; text-align: center; }
+.mgrid .h { font-size: 11px; font-weight: 600; color: var(--text-3); padding-bottom: 4px; }
+.mday { aspect-ratio: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; border-radius: 10px; font-size: 15px; font-variant-numeric: tabular-nums; }
+.mday .sw { width: 6px; height: 6px; border-radius: 50%; background: var(--sw); box-shadow: inset 0 0 0 1px var(--sep); }
+.mday.out { color: var(--text-3); opacity: .35; }
+.mday.today { color: var(--accent); font-weight: 700; }
+.mday.big { font-weight: 700; }
+a.mday:active { background: var(--fill); }
+.legend { display: flex; gap: 12px; flex-wrap: wrap; padding: 10px 4px 0; font-size: 12px; color: var(--text-2); }
+.legend span { display: inline-flex; align-items: center; gap: 5px; }
+.ev { display: grid; grid-template-columns: 46px 1fr; gap: 12px; padding: 12px 16px; position: relative; color: var(--text); }
+a.ev:active { background: var(--fill); }
+.ev + .ev::before { content: ""; position: absolute; top: 0; left: 74px; right: 0; height: .5px; background: var(--sep); }
+.ev .d { text-align: center; }
+.ev .d b { display: block; font-size: 22px; font-weight: 600; line-height: 1.05; font-variant-numeric: tabular-nums; }
+.ev .d span { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--accent); }
+.ev .t { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.ev .t b { font-size: 16px; font-weight: 600; line-height: 1.25; }
+.ev .t b.serif { font-family: var(--font-display); font-weight: 500; font-size: 18.5px; }
+.mlabel { font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; color: var(--text-3); padding: 18px 4px 8px; }
+
+/* guía */
+.quote { font-family: var(--font-display); font-style: italic; font-size: 22px; line-height: 1.3; text-align: center; padding: 8px 12px 0; color: var(--text); }
+.quote small { display: block; font-family: var(--font-ui); font-style: normal; font-size: 13px; color: var(--text-3); margin-top: 8px; }
+.step { display: grid; grid-template-columns: 34px 1fr; gap: 12px; padding: 14px 16px; position: relative; }
+.step + .step::before { content: ""; position: absolute; top: 0; left: 62px; right: 0; height: .5px; background: var(--sep); }
+.step .n { width: 28px; height: 28px; border-radius: 50%; background: var(--fill); display: grid; place-items: center; font-size: 13px; font-weight: 700; color: var(--accent); }
+.step b { display: block; font-size: 16px; margin-bottom: 3px; }
+.step p { margin: 0; font-size: 14.5px; color: var(--text-2); line-height: 1.5; }
+
+.foot { padding: 28px 8px 0; text-align: center; font-size: 12.5px; color: var(--text-3); line-height: 1.5; }
+
+/* barra de pestañas */
+.tabbar { position: fixed; left: 0; right: 0; bottom: 0; z-index: 40; background: var(--bar); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-top: .5px solid var(--sep); padding-bottom: env(safe-area-inset-bottom, 0px); padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px); }
+.tabbar nav { max-width: 600px; margin: 0 auto; display: grid; grid-template-columns: repeat(5, 1fr); }
+.tabbar a { height: 56px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; font-size: 10.5px; font-weight: 500; color: var(--text-3); }
+.tabbar a svg { transition: transform .3s var(--ease); }
+.tabbar a[aria-current="page"] { color: var(--accent); }
+.tabbar a[aria-current="page"] svg { transform: translateY(-1px) scale(1.06); }
+
+/* lightbox */
+.lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(0,0,0,.92); display: grid; place-items: center; padding: 24px; }
+.lightbox img { max-width: 100%; max-height: 82vh; border-radius: 10px; }
+.lightbox p { color: #ddd; font-size: 14px; text-align: center; margin: 12px 0 0; }
+.lightbox p a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.lightbox button { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: 12px; width: 44px; height: 44px; border-radius: 50%; background: rgba(255,255,255,.14); color: #fff; font-size: 20px; }
+
+/* enlaces oficiales */
+.linkrow { display: flex; align-items: center; gap: 12px; min-height: 52px; padding: 10px 16px; position: relative; color: var(--text); }
+.linkrow + .linkrow::before { content: ""; position: absolute; top: 0; left: 56px; right: 0; height: .5px; background: var(--sep); }
+.linkrow .ic { width: 30px; height: 30px; border-radius: 8px; display: grid; place-items: center; flex: none; color: #fff; background: var(--accent); }
+.linkrow .ic.ig { background: linear-gradient(45deg, #f9a03f, #e1306c 55%, #833ab4); }
+.linkrow .main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.linkrow .main b { font-weight: 600; }
+.linkrow .main span { font-size: 13.5px; color: var(--text-2); overflow-wrap: anywhere; }
+.linkrow:active { background: var(--fill); }
+
+/* aviso de privacidad */
+.consent { position: fixed; left: 0; right: 0; bottom: calc(64px + env(safe-area-inset-bottom, 0px)); z-index: 50; padding: 0 max(12px, env(safe-area-inset-right, 0px)) 0 max(12px, env(safe-area-inset-left, 0px)); display: flex; justify-content: center; pointer-events: none; }
+.consent .box { pointer-events: auto; width: 100%; max-width: 560px; background: var(--card); border-radius: var(--r-lg); box-shadow: 0 10px 40px rgba(0,0,0,.22); padding: 16px; display: flex; flex-direction: column; gap: 12px; }
+.consent p { margin: 0; font-size: 14.5px; line-height: 1.45; color: var(--text-2); }
+.consent p b { color: var(--text); }
+.consent .actions { margin-top: 0; }
+@media (prefers-reduced-motion: no-preference) { .consent .box { animation: sheet .45s var(--ease) both; } @keyframes sheet { from { transform: translateY(24px); opacity: 0; } } }
+
+/* artículos (blog y catequesis) */
+.article { padding-top: 22px; }
+.article h1 { font-family: var(--font-display); font-weight: 500; font-size: 32px; line-height: 1.12; letter-spacing: -.005em; margin: 6px 0 10px; }
+.article .byline { font-size: 14px; color: var(--text-3); }
+.prose { font-family: var(--font-display); font-size: 20px; line-height: 1.55; color: var(--text); margin-top: 18px; }
+.prose p { margin: 0 0 1em; }
+.prose h2, .prose h3 { font-family: var(--font-ui); font-size: 19px; margin: 1.4em 0 .5em; }
+.prose blockquote { margin: 1em 0; padding: 2px 0 2px 16px; border-left: 3px solid var(--accent); color: var(--text-2); font-style: italic; }
+.prose a { text-decoration: underline; text-underline-offset: 3px; }
+.prose ul, .prose ol { padding-left: 1.2em; }
+.prose img { max-width: 100%; border-radius: var(--r-md); }
+.postrow { display: flex; flex-direction: column; gap: 4px; padding: 14px 16px; position: relative; color: var(--text); }
+.postrow + .postrow::before { content: ""; position: absolute; top: 0; left: 16px; right: 0; height: .5px; background: var(--sep); }
+.postrow b { font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.2; }
+.postrow span { font-size: 14px; color: var(--text-2); }
+.postrow small { font-size: 12.5px; color: var(--text-3); }
+.postrow:active { background: var(--fill); }
+
+/* texto legal */
+.legal h2 { font-size: 19px; margin: 22px 4px 8px; }
+.legal .card { padding: 16px; font-size: 15px; line-height: 1.55; color: var(--text-2); }
+.legal .card p { margin: 0 0 10px; }
+.legal .card p:last-child { margin-bottom: 0; }
+.legal b { color: var(--text); }
+
+.toast { position: fixed; left: 50%; bottom: calc(80px + env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 20px); z-index: 70; background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-size: 14px; font-weight: 500; opacity: 0; pointer-events: none; transition: opacity .25s, transform .3s var(--ease); }
+.toast.on { opacity: 1; transform: translate(-50%, 0); }
+.loading { padding: 80px 16px; text-align: center; color: var(--text-3); }
+
+/* animación */
+@media (prefers-reduced-motion: no-preference) {
+  .reveal > * { animation: rise .45s var(--ease) both; animation-delay: calc(var(--i, 0) * 45ms); }
+  @keyframes rise { from { opacity: 0; transform: translateY(10px); } }
+  ::view-transition-old(root) { animation: vt-out .16s ease-in both; }
+  ::view-transition-new(root) { animation: vt-in .28s var(--ease) both; }
+  @keyframes vt-out { to { opacity: 0; } }
+  @keyframes vt-in { from { opacity: 0; transform: translateY(8px); } }
+  .tick { display: inline-block; animation: tick .35s var(--ease); }
+  @keyframes tick { from { opacity: .2; transform: translateY(-4px); } }
+}
+@media (prefers-reduced-motion: reduce) { .live-dot { animation: none; } * { transition: none !important; } }
+@media (min-width: 640px) { .largetitle h1 { font-size: 40px; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="topbar" id="topbar">
+    <span id="back"></span>
+    <span class="t" id="toptitle">Misas Tradicionales BCN</span>
+    <span class="right"><button class="icon-btn" id="themebtn" type="button" aria-label="Apariencia: automática"></button><a class="icon-btn" href="#avisos" aria-label="Avisos" id="bell"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg></a></span>
+  </header>
+  <main id="view">
+    <div class="wrap largetitle"><h1>Misas Tradicionales BCN</h1>
+      <p class="sub">Horarios de la Misa tradicional en latín (rito romano de 1962) en Barcelona, actualizados cada día.</p>
+      <p class="sub">Capilla Nuestra Señora de la Merced (C/ Vallespir 118, Sants) · Parròquia de Sant Jordi de Vallcarca (Viaducte de Vallcarca 7) · Capilla de Nuestra Señora de la Merced y San Pedro Apóstol (C/ Laforja 21, Sant Gervasi).</p>
+      <p class="loading">Cargando horarios…</p></div>
+  </main>
+</div>
+<div class="tabbar">
+  <nav aria-label="Secciones">
+    <a href="#hoy" data-tab="hoy"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v18M5 9h14"/></svg>Hoy</a>
+    <a href="#horarios" data-tab="horarios"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Horarios</a>
+    <a href="#mapa" data-tab="mapa"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2Z"/><path d="M9 4v14M15 6v14"/></svg>Mapa</a>
+    <a href="#agenda" data-tab="agenda"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>Agenda</a>
+    <a href="#mas" data-tab="mas"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="12" r="1.3"/><circle cx="12" cy="12" r="1.3"/><circle cx="19" cy="12" r="1.3"/></svg>Más</a>
+  </nav>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="consent" id="consent" hidden>
+  <div class="box" role="region" aria-label="Aviso de privacidad">
+    <p><b>Sin cookies ni rastreadores.</b> Esta web solo guarda en tu dispositivo tus preferencias, como Mi capilla. Los mapas y enlaces externos se abren solo si los pulsas.</p>
+    <div class="actions"><button class="act primary" id="consent-ok">Entendido</button><a class="act" href="#privacidad" id="consent-more">Más información</a></div>
+  </div>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const TZ = "Europe/Madrid";
+  const WD = ["domingo", "lunes", "martes", "miércoles", "jueves", "viernes", "sábado"];
+  const WD1 = ["D", "L", "M", "X", "J", "V", "S"];
+  const WD3 = ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"];
+  const MES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+  const DAYNAME = { mon: "Lunes", tue: "Martes", wed: "Miércoles", thu: "Jueves", fri: "Viernes", sat: "Sábados", sun: "Domingos" };
+  const MINOR = /^(Confesiones|Santo Rosario|Ensayo)/;
+  const view = document.getElementById("view");
+  const topbar = document.getElementById("topbar");
+  let S = null, GEO = { chapels: {} }, MAP = null, PHOTOS = {}, BLOG = [], CATE = [];
+  const st = { day: 0, filter: "all", onlyMass: false, agKind: "all", agCh: "all", month: null };
+  let mapInst = null, miniInst = null, ticker = null;
+
+  // ------------------------------------------------------------ utilidades
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const mins = (t) => { const [h, m] = t.split(":").map(Number); return h * 60 + m; };
+  const isMass = (e) => e.kind.startsWith("Misa");
+  const dur = (e) => (/cantada/i.test(e.kind) ? 75 : 45);
+  const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
+  const store = { get(k, d) { try { const v = localStorage.getItem("aad:" + k); return v == null ? d : JSON.parse(v); } catch { return d; } },
+                  set(k, v) { try { localStorage.setItem("aad:" + k, JSON.stringify(v)); } catch {} } };
+  function nowMadrid() {
+    const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: TZ, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit", hourCycle: "h23" })
+      .formatToParts(new Date()).map((x) => [x.type, x.value]));
+    return { iso: `${p.year}-${p.month}-${p.day}`, min: +p.hour * 60 + +p.minute, sec: +p.second };
+  }
+  const D = (s) => { const [y, m, d] = s.split("-").map(Number); return new Date(Date.UTC(y, m - 1, d)); };
+  const iso = (d) => d.toISOString().slice(0, 10);
+  const addDays = (s, n) => iso(new Date(D(s).getTime() + n * 864e5));
+  const dow = (s) => D(s).getUTCDay();
+  const dnum = (s) => D(s).getUTCDate();
+  const mon = (s) => D(s).getUTCMonth();
+  const longDate = (s) => `${WD[dow(s)]}, ${dnum(s)} de ${MES[mon(s)]}`;
+  const ch = (id) => S.chapels.find((c) => c.id === id);
+  const tag = (id) => { const c = ch(id); return `<span class="tag ch-${esc(id)}"><span class="dot"></span>${esc(c.tag)}</span>`; };
+  const swatch = (color) => `var(--swatch-${color || "blanco"})`;
+  const dayBy = (isoS) => S.days.find((d) => d.date === isoS);
+  const mapsUrl = (c) => { const g = GEO.chapels[c.id]; return g ? `https://www.google.com/maps/search/?api=1&query=${g.lat},${g.lon}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${c.address}, ${c.postcode} Barcelona`)}`; };
+  const gcal = (d, e) => {
+    const c = ch(e.chapel), [h, m] = e.time.split(":").map(Number), end = h * 60 + m + dur(e);
+    const ymd = d.date.replace(/-/g, ""), p = (n) => String(n).padStart(2, "0");
+    const q = new URLSearchParams({ action: "TEMPLATE", text: `${e.kind} · ${c.tag}`, dates: `${ymd}T${p(h)}${p(m)}00/${ymd}T${p(Math.floor(end / 60))}${p(end % 60)}00`, ctz: TZ,
+      location: `${c.name}, ${c.address}, ${c.postcode} Barcelona`, details: `${d.liturgy ? d.liturgy.title + "\n" : ""}Confirma siempre con la capilla.` });
+    return `https://calendar.google.com/calendar/render?${q}`;
+  };
+  const propioUrl = (s) => { const [y, m, d] = s.split("-"); return `https://www.divinumofficium.com/cgi-bin/missa/missa.pl?date=${m}-${d}-${y}&version=Rubrics%201960%20-%201960&lang2=Espanol`; };
+  function toast(msg) { const t = document.getElementById("toast"); t.textContent = msg; t.classList.add("on"); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove("on"), 1800); }
+  function copy(text, okMsg) {
+    const done = () => toast(okMsg || "Copiado");
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, () => toast(text));
+    else toast(text);
+  }
+  // retraso del escalonado (--i) sin pisar un style ya presente en la etiqueta
+  const I = (n, html) => (/\sstyle="/.test(html.slice(0, html.indexOf(">")))
+    ? html.replace('style="', `style="--i:${n};`) : html.replace(/^<(\w+)/, `<$1 style="--i:${n}"`));
+  const ICON = {
+    chev: '<svg class="chev" width="8" height="14" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m1 1 6 6-6 6"/></svg>',
+    ext: '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>',
+    nav: '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21 3 3 10.5l7.5 2 2 7.5L21 3Z"/></svg>',
+    cal: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>',
+    star: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9L12 2.8Z"/></svg>',
+    phone: '<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2Z"/></svg>',
+    web: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>',
+    ig: '<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>',
+    link: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg>',
+  };
+
+  // ------------------------------------------------------------ cálculos
+  function todayIdx() { const n = nowMadrid().iso; const i = S.days.findIndex((d) => d.date === n); return i >= 0 ? i : (n < S.days[0].date ? 0 : -1); }
+  function nextMass(fromIdx, chId) {
+    const now = nowMadrid();
+    for (let i = Math.max(fromIdx, 0); i < S.days.length; i++) {
+      const d = S.days[i];
+      for (const e of d.entries) {
+        if (!isMass(e) || (chId && e.chapel !== chId)) continue;
+        if (d.date === now.iso && mins(e.time) + dur(e) <= now.min) continue;
+        return { d, e, live: d.date === now.iso && mins(e.time) <= now.min };
+      }
+    }
+    return null;
+  }
+  function untilText(n) {
+    const now = nowMadrid();
+    if (n.live) return "En curso";
+    const dd = Math.round((D(n.d.date) - D(now.iso)) / 864e5);
+    const left = dd * 1440 + mins(n.e.time) - now.min;
+    if (left < 60) return `Empieza en ${left} min`;
+    if (dd === 0) return `Hoy · en ${Math.floor(left / 60)} h ${left % 60} min`;
+    if (dd === 1) return "Mañana";
+    return cap(`${WD[dow(n.d.date)]} ${dnum(n.d.date)}`);
+  }
+  function countdown(n) {
+    if (n.live) return "Comenzó a las " + n.e.time;
+    const now = nowMadrid();
+    const dd = Math.round((D(n.d.date) - D(now.iso)) / 864e5);
+    const left = dd * 1440 + mins(n.e.time) - now.min;
+    const d = Math.floor(left / 1440), h = Math.floor((left % 1440) / 60), m = left % 60;
+    return "Faltan " + [d && `${d} d`, (d || h) && `${h} h`, `${m} min`].filter(Boolean).join(" ");
+  }
+  function nextSunday(fromIso) { let s = fromIso; for (let k = 0; k < 7; k++) { if (dow(s) === 0) return s; s = addDays(s, 1); } return s; }
+
+  // ------------------------------------------------------------ piezas
+  function row(e, d, opts = {}) {
+    const now = nowMadrid();
+    const past = d.date === now.iso && mins(e.time) + (isMass(e) ? dur(e) : 0) <= now.min;
+    const minor = MINOR.test(e.kind);
+    return `<a class="row${minor ? " minor" : ""}${past ? " past" : ""}" href="#capilla-${esc(e.chapel)}">
+      <span class="time">${esc(e.time)}</span>
+      <span class="main"><b>${esc(e.kind)}</b>${opts.sub ? `<span>${esc(opts.sub)}</span>` : ""}</span>
+      ${opts.noTag ? "" : tag(e.chapel)}${ICON.chev}</a>`;
+  }
+  function notes(d, filter) {
+    const out = [];
+    for (const id of d.no_mass || []) if (filter === "all" || filter === id) out.push(`<div class="note"><span>⚠︎</span><span><b>${esc(ch(id).tag)}:</b> no hay Misa este día${(d.notes || []).find((n) => n.chapel === id && /padre no asiste/i.test(n.text)) ? " (el sacerdote no puede venir)" : ""}.</span></div>`);
+    for (const n of d.notes || []) if ((filter === "all" || filter === n.chapel) && !/no habr|no hay/i.test(n.text))
+      out.push(`<div class="note"><span>ℹ︎</span><span><b>${esc(ch(n.chapel).tag)}:</b> ${esc(n.text.replace(/^\(\s*(Nota:\s*)?|\)$/g, ""))}</span></div>`);
+    return out.join("");
+  }
+  function chapelRow(c) {
+    const n = nextMass(Math.max(todayIdx(), 0), c.id);
+    const fav = store.get("fav", null) === c.id;
+    return `<a class="row" href="#capilla-${esc(c.id)}" style="min-height:64px">
+      ${(PHOTOS[c.id] || [])[0] ? `<img class="chthumb" src="${esc(PHOTOS[c.id][0].thumb)}" alt="" loading="lazy">` : `<span class="swatch" style="--sw:var(--ch-${esc(c.id)});width:12px;height:12px;box-shadow:none"></span>`}
+      <span class="main"><b>${esc(c.name)}${fav ? ' <span style="color:#e0a100">★</span>' : ""}</b><span>${esc(c.tag)} · ${esc(c.address)}${n ? ` · ${esc(untilText(n).replace(/^Hoy · /, ""))}${n.live ? "" : ` ${esc(n.e.time)}`}` : ""}</span></span>${ICON.chev}</a>`;
+  }
+
+  // ------------------------------------------------------------ vistas
+  function vHoy() {
+    const ti = todayIdx();
+    if (ti < 0) return `<div class="wrap largetitle"><h1>Datos caducados</h1><p class="sub">Los horarios llegan hasta el ${esc(longDate(S.to))}.</p></div>`;
+    const d = S.days[ti], now = nowMadrid(), l = d.liturgy;
+    const n = nextMass(ti);
+    const fav = store.get("fav", null);
+    const sun = nextSunday(d.date), sd = dayBy(sun);
+    const sunMasses = sd ? sd.entries.filter(isMass) : [];
+    const todayList = d.entries.filter((e) => !/^(Confesiones|Ensayo)/.test(e.kind));
+    const ag = S.agenda.filter((a) => a.date > d.date).slice(0, 3);
+    let i = 0;
+    return `<div class="wrap reveal">
+      ${I(i++, `<div class="largetitle"><div class="eyebrow">${esc(longDate(d.date))}</div><h1>Hoy</h1></div>`)}
+      ${I(i++, `<div class="card litcard" style="--swatch:${l ? swatch(l.color) : "var(--accent)"}">
+        <div class="eyebrow">Calendario de 1962</div>
+        <div class="feast">${esc(l ? l.title : "—")}</div>
+        ${l ? `<div class="meta"><span class="tag k">${l.class === "IV" ? "Feria" : `${l.class} clase`}</span><span class="tag k"><span class="swatch" style="--sw:${swatch(l.color)};width:10px;height:10px"></span>Ornamento ${esc(l.color)}</span></div>
+        ${l.commemorations && l.commemorations.length ? `<div class="comm">Conmemoración: ${esc(l.commemorations.join(" · "))}</div>` : ""}
+        <a class="propio" href="${propioUrl(d.date)}" target="_blank" rel="noopener">Textos de la Misa de hoy ${ICON.ext}</a>` : ""}
+      </div>`)}
+      ${n ? I(i++, `<div class="section"><div class="card next" id="nextcard">
+        <div class="top"><span class="when">${n.live ? '<span class="live-dot"></span>' : ""}${esc(untilText(n))}</span>${tag(n.e.chapel)}</div>
+        <div class="clock">${esc(n.e.time)}</div>
+        <div class="what"><b>${esc(n.e.kind)}</b><span class="muted" style="font-size:14.5px">${esc(ch(n.e.chapel).name)}</span><span class="countdown" id="countdown">${esc(countdown(n))}</span></div>
+        <div class="actions"><a class="act primary" href="${mapsUrl(ch(n.e.chapel))}" target="_blank" rel="noopener">${ICON.nav} Cómo llegar</a><a class="act" href="${gcal(n.d, n.e)}" target="_blank" rel="noopener">${ICON.cal} Añadir</a></div>
+      </div></div>`) : ""}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Hoy en Barcelona</h2><a href="#horarios">Semana</a></div>
+        <div class="list">${todayList.length ? todayList.map((e) => row(e, d)).join("") : `<div class="empty">Hoy no hay Misa en ninguna de las tres capillas.</div>`}</div>${notes(d, "all")}</div>`)}
+      ${sd ? I(i++, `<div class="section sunday"><div class="section-h"><h2>${sun === d.date ? "Este domingo" : `Domingo ${dnum(sun)}`}</h2><button data-act="goday" data-v="${sun}">Ver día</button></div>
+        <div class="list">${sunMasses.map((e) => row(e, sd)).join("") || `<div class="empty">Sin Misas publicadas.</div>`}</div>
+        ${sd.liturgy ? `<p class="faint" style="font-size:13.5px;padding:8px 4px 0;margin:0"><span class="serif" style="font-size:15.5px;color:var(--text-2)">${esc(sd.liturgy.title)}</span></p>` : ""}</div>`) : ""}
+      ${fav && ch(fav) ? I(i++, favCard(fav, ti)) : ""}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Las capillas</h2><a href="#mapa">Mapa</a></div>
+        <div class="minimap-box" style="margin-bottom:10px"><div class="minimap" id="minimap"></div></div>
+        <div class="list">${S.chapels.map(chapelRow).join("")}</div>
+        ${fav ? "" : `<p class="faint" style="font-size:13.5px;padding:8px 4px 0;margin:0">Marca tu capilla con ★ en su ficha y aparecerá aquí arriba.</p>`}</div>`)}
+      ${BLOG.length ? I(i++, `<div class="section"><div class="section-h"><h2>Del blog</h2><a href="#blog">Ver todo</a></div><div class="list"><a class="postrow" href="#post-${esc(BLOG[0].slug)}"><small>${esc(fmtDate(BLOG[0].date))}</small><b>${esc(BLOG[0].title)}</b>${BLOG[0].summary ? `<span>${esc(BLOG[0].summary)}</span>` : ""}</a></div></div>`) : ""}
+      ${ag.length ? I(i++, `<div class="section"><div class="section-h"><h2>Próximamente</h2><a href="#agenda">Agenda</a></div><div class="list">${ag.map(evRow).join("")}</div></div>`) : ""}
+      ${I(i++, footer())}
+    </div>`;
+  }
+
+  function favCard(id, ti) {
+    const c = ch(id);
+    const up = [];
+    for (let k = ti; k < S.days.length && up.length < 3; k++) for (const e of S.days[k].entries) if (e.chapel === id && isMass(e) && up.length < 3) {
+      const d = S.days[k]; if (d.date === nowMadrid().iso && mins(e.time) + dur(e) <= nowMadrid().min) continue; up.push([d, e]); }
+    return `<div class="section"><div class="section-h"><h2>Mi capilla</h2><a href="#capilla-${esc(id)}">${esc(c.tag)}</a></div>
+      <div class="list">${up.map(([d, e]) => row(e, d, { sub: cap(`${WD[dow(d.date)]} ${dnum(d.date)}`), noTag: true })).join("") || `<div class="empty">Sin Misas publicadas.</div>`}</div></div>`;
+  }
+
+  function vHorarios() {
+    const ti = Math.max(todayIdx(), 0), max = S.days.length - 1;
+    st.day = Math.min(Math.max(st.day, ti), max);
+    const ws = ti + Math.floor((st.day - ti) / 7) * 7;
+    const days = S.days.slice(ws, ws + 7), sel = S.days[st.day], now = nowMadrid();
+    let rows = sel.entries.filter((e) => st.filter === "all" || e.chapel === st.filter);
+    if (st.onlyMass) rows = rows.filter(isMass);
+    const a = days[0].date, b = days[days.length - 1].date;
+    const lbl = mon(a) === mon(b) ? `${dnum(a)} – ${dnum(b)} de ${MES[mon(b)]}` : `${dnum(a)} ${MES[mon(a)].slice(0, 3)} – ${dnum(b)} ${MES[mon(b)].slice(0, 3)}`;
+    return `<div class="wrap">
+      <div class="largetitle"><h1>Horarios</h1><div class="sub">Las tres capillas en un solo calendario</div></div>
+      <div class="card" style="padding:12px 10px 10px">
+        <div class="weeknav"><button data-act="week" data-v="-7" ${ws <= ti ? "disabled" : ""} aria-label="Semana anterior"><svg width="10" height="16" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1 1 7l6 6"/></svg></button>
+          <span class="lbl">${esc(lbl)}</span>
+          <button data-act="week" data-v="7" ${ws + 7 > max ? "disabled" : ""} aria-label="Semana siguiente"><svg width="10" height="16" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m1 1 6 6-6 6"/></svg></button></div>
+        <div class="week" role="group" aria-label="Día">${days.map((d, k) => `<button class="wd${d.date === now.iso ? " today" : ""}${d.entries.some(isMass) ? "" : " nomass"}" data-act="day" data-v="${ws + k}" aria-pressed="${ws + k === st.day}" aria-label="${esc(longDate(d.date))}">
+          <span class="l">${WD1[dow(d.date)]}</span><span class="n">${dnum(d.date)}</span><span class="lc" style="--sw:${swatch(d.liturgy && d.liturgy.color)}"></span></button>`).join("")}</div>
+      </div>
+      <div class="chips" style="margin-top:14px" role="group" aria-label="Capilla">
+        <button class="chip" data-act="filter" data-v="all" aria-pressed="${st.filter === "all"}">Todas</button>
+        ${S.chapels.map((c) => `<button class="chip" data-act="filter" data-v="${esc(c.id)}" aria-pressed="${st.filter === c.id}" style="--c:var(--ch-${esc(c.id)})"><span class="dot"></span>${esc(c.tag)}</button>`).join("")}
+        <button class="chip" data-act="onlymass" aria-pressed="${st.onlyMass}">Solo Misas</button>
+      </div>
+      <div class="daytitle"><h2>${esc(cap(longDate(sel.date)))}</h2>${sel.liturgy ? `<div class="lit"><span class="swatch" style="--sw:${swatch(sel.liturgy.color)};width:11px;height:11px"></span><span class="serif">${esc(sel.liturgy.title)}</span></div>` : ""}</div>
+      <div class="list reveal">${rows.length ? rows.map((e, k) => I(k, row(e, sel))).join("") : `<div class="empty">Sin celebraciones${st.filter === "all" ? "" : ` en ${esc(ch(st.filter).tag)}`} este día.</div>`}</div>
+      ${notes(sel, st.filter)}
+      ${sel.entries.some(isMass) ? `<p class="faint" style="font-size:13px;padding:10px 4px 0;margin:0">Toca una celebración para ver la capilla. Las Misas también se pueden <a href="#mas">añadir a tu calendario</a>.</p>` : ""}
+    </div>`;
+  }
+
+  function vMapa() {
+    return `<div class="mapwrap"><div id="map" aria-label="Mapa de las capillas"></div>
+      <div class="mapcards" id="mapcards">${S.chapels.map((c) => {
+        const n = nextMass(Math.max(todayIdx(), 0), c.id);
+        const tr = (GEO.chapels[c.id] || {}).transit || [];
+        return `<div class="mapcard" data-ch="${esc(c.id)}">
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">${tag(c.id)}<span class="faint" style="font-size:13px">${tr[0] ? `${esc(tr[0].kind)} ${esc(tr[0].name)} · ${tr[0].min} min` : esc(c.district)}</span></div>
+          <b>${esc(c.name)}</b><span class="nx">${n ? `${esc(untilText(n))}${n.live ? "" : ` · ${esc(n.e.time)}`} · ${esc(n.e.kind)}` : "Sin Misas publicadas"}</span>
+          <div class="actions"><a class="act primary" href="${mapsUrl(c)}" target="_blank" rel="noopener">${ICON.nav} Ir</a><a class="act" href="#capilla-${esc(c.id)}">Ficha</a>${(c.links || []).find((l) => l.type === "web") ? `<a class="act" href="${esc(c.links.find((l) => l.type === "web").url)}" target="_blank" rel="noopener" aria-label="Web de la capilla">${ICON.web}</a>` : ""}</div></div>`; }).join("")}</div></div>`;
+  }
+
+  function vCapilla(id) {
+    const c = ch(id);
+    if (!c) return vHoy();
+    const ti = Math.max(todayIdx(), 0), g = GEO.chapels[id] || {}, ph = PHOTOS[id] || [];
+    const fav = store.get("fav", null) === id;
+    const up = [];
+    for (let k = ti; k < S.days.length && up.length < 6; k++) {
+      const d = S.days[k], ee = d.entries.filter((e) => e.chapel === id && isMass(e));
+      if (ee.length || (d.no_mass || []).includes(id)) up.push([d, ee]);
+    }
+    const by = {};
+    for (const r of c.regular) for (const dd of r.days) (by[dd] ||= []).push(r);
+    const order = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"];
+    let i = 0;
+    return `<div class="wrap reveal" style="padding-top:8px">
+      ${I(i++, ph.length === 1 ? `<button class="hero" data-act="photo" data-v="0" aria-label="Ampliar foto: ${esc(ph[0].caption || c.name)}"><img src="${esc(ph[0].src)}" alt="${esc(ph[0].caption || c.name)}">${ph[0].credit ? `<span class="credit">© ${esc(ph[0].credit)}</span>` : ""}</button>`
+        : ph.length ? `<div class="gallery">${ph.map((p, k) => `<button data-act="photo" data-v="${k}" aria-label="Ver foto ${k + 1}${p.caption ? `: ${esc(p.caption)}` : ""}"><img src="${esc(p.thumb)}" alt="${esc(p.caption || c.name)}" loading="${k ? "lazy" : "eager"}">${p.credit ? `<span class="credit">© ${esc(p.credit)}</span>` : ""}</button>`).join("")}</div>`
+        : `<div class="cover" style="--c:var(--ch-${esc(id)})"><div><div class="cross" aria-hidden="true">✠</div><div class="mono">${esc(c.tag)}</div></div><div class="soon">Fotos de la capilla, próximamente</div></div>`)}
+      ${I(i++, `<div class="chtitle"><h1>${esc(c.name)}</h1><button class="fav" data-act="fav" data-v="${esc(id)}" aria-pressed="${fav}" aria-label="${fav ? "Quitar de mi capilla" : "Marcar como mi capilla"}">${ICON.star}</button></div>`)}
+      ${I(i++, `<div class="tags" style="padding:4px 4px 0">${tag(id)}<span class="tag k">${esc(c.institution)}</span>${c.verified ? "" : `<span class="tag warn">Horario por confirmar</span>`}</div>`)}
+      ${I(i++, `<div class="actions stack" style="margin-top:16px"><a class="act primary" href="${mapsUrl(c)}" target="_blank" rel="noopener">${ICON.nav} Cómo llegar</a>${(c.links || []).find((l) => l.type === "web") ? `<a class="act" href="${esc(c.links.find((l) => l.type === "web").url)}" target="_blank" rel="noopener">${ICON.web} Web</a>` : ""}${c.phone ? `<a class="act" href="tel:${esc(c.phone.replace(/\s/g, ""))}">${ICON.phone} Llamar</a>` : ""}<button class="act" data-act="share" data-v="${esc(id)}">${ICON.link} Enlace</button></div>`)}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Próximas Misas</h2><button data-act="filtergo" data-v="${esc(id)}">Horario</button></div>
+        <div class="list">${up.map(([d, ee]) => ee.length ? ee.map((e) => row(e, d, { sub: `${cap(WD[dow(d.date)])} ${dnum(d.date)}${d.liturgy ? " · " + d.liturgy.title : ""}`, noTag: true })).join("")
+          : `<div class="row"><span class="time faint">—</span><span class="main"><b class="faint">Sin Misa</b><span>${esc(cap(WD[dow(d.date)]))} ${dnum(d.date)}</span></span></div>`).join("") || `<div class="empty">Sin Misas publicadas.</div>`}</div></div>`)}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Horario habitual</h2></div><div class="list">
+        ${order.filter((k) => by[k]).map((k) => `<div class="kv"><span>${DAYNAME[k]}</span><span>${by[k].sort((a, b) => mins(a.time) - mins(b.time)).map((r) => `<span class="tnum">${esc(r.time.padStart(5, "0"))}</span> ${esc(r.kind)}${r.months ? ' <span class="faint">· oct.–jun.</span>' : ""}${r.skip_months ? ' <span class="faint">· salvo sept.</span>' : ""}`).join("<br>")}</span></div>`).join("")}
+        ${c.confessions ? `<div class="kv"><span>Confesiones</span><span>${esc(c.confessions)}</span></div>` : ""}
+      </div>${c.verified_note ? `<div class="note"><span>ⓘ</span><span>${esc(c.verified_note)}</span></div>` : ""}
+      ${c.status && c.status.stale && c.status.checked ? `<div class="note"><span>ⓘ</span><span>Hoy no se pudo leer la web de la capilla; se muestra el último horario conocido.</span></div>` : ""}</div>`)}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Cómo llegar</h2></div>
+        ${g.lat ? `<div class="minimap-box" style="margin-bottom:10px"><div class="minimap" id="chapmap"></div></div>` : ""}
+        <div class="list">
+          <div class="kv"><span>Dirección</span><span>${esc(c.address)}<br><span class="faint">${esc(c.postcode)} Barcelona · ${esc(c.district)}</span><button class="copy" data-act="copy" data-v="${esc(`${c.address}, ${c.postcode} Barcelona`)}">Copiar</button></span></div>
+          ${(g.transit || []).map((t) => `<div class="kv"><span>${esc(t.kind)}</span><span><span class="transit${t.kind === "FGC" ? " fgc" : ""}">${esc(t.kind === "FGC" ? "FGC" : "M")}</span> ${esc(t.name)}${t.lines ? ` <span class="faint">${esc(t.lines)}</span>` : ""}<br><span class="faint">${t.m} m · unos ${t.min} min a pie</span></span></div>`).join("")}
+        </div></div>`)}
+      ${(c.links || []).length ? I(i++, `<div class="section"><div class="section-h"><h2>Canales oficiales</h2></div><div class="list">
+        ${c.links.map((l) => `<a class="linkrow" href="${esc(l.url)}" target="_blank" rel="noopener"><span class="ic${l.type === "instagram" ? " ig" : ""}">${l.type === "instagram" ? ICON.ig : ICON.web}</span><span class="main"><b>${l.type === "instagram" ? "Instagram" : "Web de la capilla"}</b><span>${esc(l.label)}</span></span>${ICON.ext}</a>`).join("")}
+      </div><p class="faint" style="font-size:13px;padding:8px 4px 0;margin:0">Para cambios de última hora, consulta siempre los canales de la capilla.</p></div>`) : ""}
+      ${I(i++, `<div class="section"><div class="section-h"><h2>Contacto</h2></div><div class="list">
+        ${c.phone ? `<div class="kv"><span>Teléfono</span><span class="tnum">${esc(c.phone)}<button class="copy" data-act="copy" data-v="${esc(c.phone)}">Copiar</button>${c.phone_note ? `<br><span class="faint" style="font-size:13px">${esc(c.phone_note)}</span>` : ""}</span></div>` : ""}
+        ${c.email ? `<div class="kv"><span>Correo</span><span style="overflow-wrap:anywhere">${esc(c.email)}<button class="copy" data-act="copy" data-v="${esc(c.email)}">Copiar</button></span></div>` : ""}
+        <div class="kv"><span>Fuentes</span><span style="display:flex;flex-direction:column;gap:4px;overflow-wrap:anywhere">${c.sources.map((u) => `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(u.replace(/^https?:\/\/(www\.|es-la\.)?/, "").replace(/\/$/, "").slice(0, 46))}</a>`).join("")}</span></div>
+      </div></div>`)}
+    </div>`;
+  }
+
+  function evRow(a) {
+    const chips = [];
+    if (a.chapel) chips.push(tag(a.chapel));
+    chips.push(`<span class="tag k">${esc(a.kind)}</span>`);
+    if (a.time) chips.push(`<span class="tag k tnum">${esc(a.time)}</span>`);
+    if (a.kind === "Liturgia" && a.color) chips.push(`<span class="tag k"><span class="swatch" style="--sw:${swatch(a.color)};width:9px;height:9px"></span>${esc(a.cls)} clase</span>`);
+    return `<a class="ev" href="#horarios" data-act="goday" data-v="${esc(a.date)}"><div class="d"><span>${WD3[dow(a.date)]}</span><b>${dnum(a.date)}</b></div>
+      <div class="t"><b class="${a.kind === "Liturgia" ? "serif" : ""}">${esc(a.title)}</b><div class="tags">${chips.join("")}</div></div></a>`;
+  }
+  function agendaItems() {
+    // Normaliza la agenda: capilla y hora como campos, no como texto «I · 20:00»
+    return S.agenda.map((a) => {
+      const m = /^(I{1,3}) · (\d{1,2}:\d{2})/.exec(a.meta || "");
+      const lit = /^(I{1,3}|IV) clase · ornamento (\w+)/.exec(a.meta || "");
+      return { ...a, chapel: a.chapel || (m && m[1]), time: a.time || (m && m[2]), cls: lit && lit[1], color: lit && lit[2],
+               title: a.title.replace(/^Catecismo adultos$/, "Catecismo de adultos").replace(/^Conferencia Tercera Orden$/, "Conferencia de la Tercera Orden") };
+    });
+  }
+  function vAgenda() {
+    const ti = Math.max(todayIdx(), 0), today = S.days[ti].date;
+    const items = agendaItems().filter((a) => a.date >= today);
+    const kinds = [...new Set(items.map((a) => a.kind))];
+    const listCh = items.filter((a) => (st.agKind === "all" || a.kind === st.agKind) && (st.agCh === "all" || a.chapel === st.agCh));
+    // mes
+    const base = st.month || today.slice(0, 7);
+    const first = `${base}-01`, startPad = (dow(first) + 6) % 7;
+    const daysIn = new Date(Date.UTC(+base.slice(0, 4), +base.slice(5, 7), 0)).getUTCDate();
+    const cells = [];
+    for (let k = 0; k < startPad; k++) cells.push(`<span></span>`);
+    for (let k = 1; k <= daysIn; k++) {
+      const s = `${base}-${String(k).padStart(2, "0")}`, d = dayBy(s);
+      const cls = ["mday"]; if (!d) cls.push("out"); if (s === today) cls.push("today"); if (d && d.liturgy && d.liturgy.class === "I") cls.push("big");
+      cells.push(d ? `<a class="${cls.join(" ")}" href="#horarios" data-act="goday" data-v="${s}" aria-label="${esc(longDate(s))}${d.liturgy ? ": " + esc(d.liturgy.title) : ""}">${k}<span class="sw" style="--sw:${swatch(d.liturgy && d.liturgy.color)}"></span></a>` : `<span class="${cls.join(" ")}">${k}<span class="sw" style="--sw:transparent;box-shadow:none"></span></span>`);
+    }
+    const prevM = (() => { const [y, m] = base.split("-").map(Number); const d = new Date(Date.UTC(y, m - 2, 1)); return iso(d).slice(0, 7); })();
+    const nextM = (() => { const [y, m] = base.split("-").map(Number); const d = new Date(Date.UTC(y, m, 1)); return iso(d).slice(0, 7); })();
+    let last = "";
+    return `<div class="wrap">
+      <div class="largetitle"><h1>Agenda</h1><div class="sub">Fiestas, catequesis y actividades</div></div>
+      <div class="card month">
+        <div class="mhead"><button class="icon-btn" data-act="month" data-v="${prevM}" ${prevM < S.from.slice(0, 7) ? "disabled style='opacity:.3'" : ""} aria-label="Mes anterior"><svg width="10" height="16" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1 1 7l6 6"/></svg></button>
+          <b>${esc(cap(MES[+base.slice(5, 7) - 1]))} ${base.slice(0, 4)}</b>
+          <button class="icon-btn" data-act="month" data-v="${nextM}" ${nextM > S.to.slice(0, 7) ? "disabled style='opacity:.3'" : ""} aria-label="Mes siguiente"><svg width="10" height="16" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m1 1 6 6-6 6"/></svg></button></div>
+        <div class="mgrid">${["L", "M", "X", "J", "V", "S", "D"].map((x) => `<span class="h">${x}</span>`).join("")}${cells.join("")}</div>
+        <div class="legend">${["blanco", "verde", "violeta", "rojo", "rosa", "negro"].map((c) => `<span><span class="swatch" style="--sw:${swatch(c)};width:9px;height:9px"></span>${c}</span>`).join("")}</div>
+      </div>
+      <div class="chips" style="margin-top:16px" role="group" aria-label="Tipo">
+        <button class="chip" data-act="agkind" data-v="all" aria-pressed="${st.agKind === "all"}">Todo</button>
+        ${kinds.map((k) => `<button class="chip" data-act="agkind" data-v="${esc(k)}" aria-pressed="${st.agKind === k}">${esc(k)}</button>`).join("")}
+      </div>
+      <div class="chips" role="group" aria-label="Capilla">
+        <button class="chip" data-act="agch" data-v="all" aria-pressed="${st.agCh === "all"}">Todas las capillas</button>
+        ${S.chapels.map((c) => `<button class="chip" data-act="agch" data-v="${esc(c.id)}" aria-pressed="${st.agCh === c.id}" style="--c:var(--ch-${esc(c.id)})"><span class="dot"></span>${esc(c.tag)}</button>`).join("")}
+      </div>
+      ${listCh.length ? listCh.map((a) => { const m = MES[mon(a.date)]; const h = m !== last ? `<div class="mlabel">${esc(cap(m))}</div>` : ""; const open = h ? `${last ? "</div>" : ""}${h}<div class="list reveal">` : ""; last = m; return open + evRow(a); }).join("") + "</div>"
+        : `<div class="list" style="margin-top:12px"><div class="empty">Nada en esta selección.</div></div>`}
+      <p class="faint" style="font-size:13px;padding:12px 4px 0;margin:0">Las fiestas se calculan con el calendario de 1962. Las actividades de Sants vienen de su hoja mensual; las demás se añaden cuando cada capilla las confirma.</p>
+    </div>`;
+  }
+
+  function vMas() {
+    const ics = new URL("data/misas.ics", location.href).href;
+    const webcal = ics.replace(/^https?:/, "webcal:");
+    return `<div class="wrap reveal">
+      ${I(0, `<div class="largetitle"><h1>Más</h1></div>`)}
+      ${I(1, `<div class="list">
+        <a class="row" href="#guia"><span class="swatch" style="--sw:var(--accent);box-shadow:none"></span><span class="main"><b>¿Primera vez?</b><span>Qué esperar y cómo seguir la Misa</span></span>${ICON.chev}</a>
+        ${BLOG.length ? `<a class="row" href="#blog"><span class="swatch" style="--sw:var(--ch-I);box-shadow:none"></span><span class="main"><b>Blog</b><span>${BLOG.length} entrada${BLOG.length > 1 ? "s" : ""} · la última, ${esc(fmtDate(BLOG[0].date))}</span></span>${ICON.chev}</a>` : ""}
+        ${CATE.length ? `<a class="row" href="#catequesis"><span class="swatch" style="--sw:var(--ch-II);box-shadow:none"></span><span class="main"><b>Catequesis</b><span>${CATE.length} lección${CATE.length > 1 ? "es" : ""}</span></span>${ICON.chev}</a>` : ""}
+        <a class="row" href="#avisos"><span class="swatch" style="--sw:var(--live);box-shadow:none"></span><span class="main"><b>Avisos</b><span>${S.avisos.length ? `${S.avisos.length} aviso${S.avisos.length > 1 ? "s" : ""}` : "Cambios y anuncios de las capillas"}</span></span>${ICON.chev}</a>
+      </div>`)}
+      ${I(2, `<div class="section"><div class="section-h"><h2>Calendario en tu móvil</h2></div><div class="card" style="padding:16px">
+        <p style="margin:0 0 12px;font-size:15px;color:var(--text-2)">Suscríbete y las Misas de las tres capillas aparecerán en tu calendario. Se actualiza solo cuando cambia un horario.</p>
+        <div class="actions" style="margin-top:0"><a class="act primary" href="${esc(webcal)}">${ICON.cal} Apple / iPhone</a><a class="act" href="https://calendar.google.com/calendar/r?cid=${encodeURIComponent(webcal)}" target="_blank" rel="noopener">Google</a></div>
+        <div style="margin-top:12px;font-size:13px;color:var(--text-3);overflow-wrap:anywhere">${esc(ics)}<button class="copy" data-act="copy" data-v="${esc(ics)}">Copiar</button></div>
+      </div></div>`)}
+      ${I(3, `<div class="section"><div class="section-h"><h2>Apariencia</h2></div><div class="card" style="padding:12px">
+        <div class="seg" role="group" aria-label="Tema">${[["auto", "Automático"], ["light", "Claro"], ["dark", "Oscuro"]].map(([k, l]) => `<button data-act="theme" data-v="${k}" aria-pressed="${store.get("theme", "auto") === k}">${l}</button>`).join("")}</div>
+        <p class="faint" style="font-size:13px;margin:10px 4px 0">Automático sigue el ajuste de tu dispositivo.</p></div></div>`)}
+      ${I(3, `<div class="section"><div class="section-h"><h2>Instalar como app</h2></div><div class="card" style="padding:16px;font-size:15px;color:var(--text-2)">
+        <p style="margin:0 0 6px"><b style="color:var(--text)">iPhone:</b> en Safari, botón Compartir → «Añadir a pantalla de inicio».</p>
+        <p style="margin:0"><b style="color:var(--text)">Android:</b> en Chrome, menú ⋮ → «Instalar aplicación».</p></div></div>`)}
+      ${I(4, `<div class="section"><div class="section-h"><h2>Sobre este hub</h2></div><div class="list">
+        <div class="kv"><span>Datos</span><span>Horarios leídos cada día de las webs y hojas de las capillas. Del ${esc(longDate(S.from))} al ${esc(longDate(S.to))}.</span></div>
+        <div class="kv"><span>Calendario</span><span>Rito romano de 1962, calculado con <a href="https://www.divinumofficium.com" target="_blank" rel="noopener">Divinum Officium</a>.</span></div>
+        <div class="kv"><span>Mapa</span><span>© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a> contributors.</span></div>
+        <div class="kv"><span>Autoría</span><span>Raigada-García. Trabajo encargado por fieles.</span></div>
+        <div class="kv"><span>Aviso</span><span>Sin vínculo oficial con ninguna capilla. Confirma siempre los horarios con cada una.</span></div>
+      </div>
+      <div class="list" style="margin-top:12px"><a class="row" href="#privacidad"><span class="main"><b>Privacidad y aviso legal</b><span>Sin cookies ni rastreadores</span></span>${ICON.chev}</a></div></div>`)}
+    </div>`;
+  }
+
+  function vGuia() {
+    const g = [
+      ["Llega con tiempo", "Diez minutos antes es lo habitual. Se guarda silencio en la iglesia para la oración personal."],
+      ["Sigue la Misa con un misal", "En la entrada suele haber hojas bilingües latín–español. También puedes abrir los textos del día desde la pestaña Hoy."],
+      ["De pie, sentado, de rodillas", "Imita a quien tengas delante. Nadie espera que lo sepas todo el primer día."],
+      ["La Comunión", "Se recibe de rodillas y en la lengua. Si no comulgas, permanece en tu sitio con toda tranquilidad."],
+      ["Confesión", "En las tres capillas se confiesa antes de la Misa. Si quieres confesarte, llega con algo más de margen."],
+      ["Vestimenta", "Ropa digna, como para una ocasión importante. Muchas mujeres llevan mantilla; es voluntario."],
+    ];
+    return `<div class="wrap reveal">
+      ${I(0, `<div class="largetitle"><div class="eyebrow">Guía</div><h1>¿Primera vez?</h1></div>`)}
+      ${I(1, `<div class="card" style="padding:22px 18px 20px"><div class="quote">«Introibo ad altare Dei, ad Deum qui laetificat juventutem meam.»<small>Me acercaré al altar de Dios, al Dios que alegra mi juventud. — Salmo 42</small></div></div>`)}
+      ${I(2, `<p style="font-size:16px;line-height:1.55;color:var(--text-2);padding:18px 4px 4px;margin:0">La Misa tradicional se celebra en latín según el Misal de 1962. No hace falta saber latín ni conocer el rito: basta con venir con tiempo, en silencio, y dejarse llevar.</p>`)}
+      ${I(3, `<div class="section"><div class="list">${g.map(([t, b], k) => `<div class="step"><span class="n">${k + 1}</span><div><b>${t}</b><p>${b}</p></div></div>`).join("")}</div></div>`)}
+      ${I(4, `<div class="actions" style="margin-top:18px"><a class="act primary" href="#hoy">Ver la próxima Misa</a></div>`)}
+    </div>`;
+  }
+
+  function vAvisos() {
+    const pdfNotes = [];
+    const ti = Math.max(todayIdx(), 0);
+    for (const d of S.days.slice(ti, ti + 30)) {
+      for (const id of d.no_mass || []) pdfNotes.push({ date: d.date, chapel: id, title: "No hay Misa", body: `${cap(longDate(d.date))}.` });
+      for (const n of d.notes || []) if (!/no habr|no hay/i.test(n.text)) pdfNotes.push({ date: d.date, chapel: n.chapel, title: "Nota", body: n.text.replace(/^\(\s*(Nota:\s*)?|\)$/g, "") });
+    }
+    const today = S.days[ti] ? S.days[ti].date : "";
+    const manual = S.avisos.filter((a) => !a.until || a.until >= today).map((a) => ({ ...a, manual: true }));
+    const all = [...manual, ...pdfNotes];
+    return `<div class="wrap reveal">
+      ${I(0, `<div class="largetitle"><h1>Avisos</h1><div class="sub">Cambios de los próximos 30 días</div></div>`)}
+      ${I(1, `<div class="list">${all.length ? all.map((a) => `<div class="ev"><div class="d"><span>${a.date ? WD3[dow(a.date)] : ""}</span><b>${a.date ? dnum(a.date) : "•"}</b></div><div class="t"><b>${esc(a.title)}</b><span class="muted" style="font-size:14.5px">${esc(a.body)}</span><div class="tags">${a.chapel && ch(a.chapel) ? tag(a.chapel) : ""}</div></div></div>`).join("")
+        : `<div class="empty">Sin avisos por ahora.</div>`}</div>`)}
+    </div>`;
+  }
+
+  const footer = () => `<p class="foot">Trabajo encargado por fieles · Raigada-García.<br>Sin vínculo oficial con ninguna capilla: confirma siempre los horarios con cada una.<br><a href="#privacidad">Privacidad y aviso legal</a></p>`;
+
+  const fmtDate = (s) => (s && /^\d{4}-\d{2}-\d{2}/.test(s) ? `${dnum(s.slice(0, 10))} de ${MES[mon(s.slice(0, 10))]} de ${s.slice(0, 4)}` : "");
+  function vBlog() {
+    return `<div class="wrap reveal">
+      ${I(0, `<div class="largetitle"><h1>Blog</h1><div class="sub">Noticias y reflexiones de los fieles</div></div>`)}
+      ${I(1, `<div class="list">${BLOG.map((p) => `<a class="postrow" href="#post-${esc(p.slug)}"><small>${esc(fmtDate(p.date))}${p.author ? ` · ${esc(p.author)}` : ""}</small><b>${esc(p.title)}</b>${p.summary ? `<span>${esc(p.summary)}</span>` : ""}</a>`).join("") || `<div class="empty">Todavía no hay entradas.</div>`}</div>`)}
+    </div>`;
+  }
+  function vCatequesis() {
+    const series = [...new Set(CATE.map((c) => c.serie || "Catequesis"))];
+    return `<div class="wrap reveal">
+      ${I(0, `<div class="largetitle"><h1>Catequesis</h1><div class="sub">Formación en la fe, por temas</div></div>`)}
+      ${series.length ? series.map((se, k) => I(k + 1, `<div class="section"><div class="section-h"><h2>${esc(se)}</h2></div><div class="list">${CATE.filter((c) => (c.serie || "Catequesis") === se).map((c) => `<a class="postrow" href="#cat-${esc(c.slug)}">${c.order ? `<small>Lección ${c.order}</small>` : ""}<b>${esc(c.title)}</b>${c.summary ? `<span>${esc(c.summary)}</span>` : ""}</a>`).join("")}</div></div>`)).join("")
+        : I(1, `<div class="list"><div class="empty">Todavía no hay lecciones.</div></div>`)}
+    </div>`;
+  }
+  function vArticle(kind, slug) {
+    const list = kind === "post" ? BLOG : CATE, p = list.find((x) => x.slug === slug);
+    if (!p) return `<div class="wrap largetitle"><h1>No encontrado</h1><p class="sub">Esta página ya no existe.</p></div>`;
+    const meta = kind === "post" ? [fmtDate(p.date), p.author].filter(Boolean).join(" · ") : [p.serie, p.order ? `Lección ${p.order}` : ""].filter(Boolean).join(" · ");
+    return `<div class="wrap article reveal">
+      ${I(0, `<div><div class="eyebrow">${kind === "post" ? "Blog" : "Catequesis"}</div><h1>${esc(p.title)}</h1><div class="byline">${esc(meta)}</div>
+        ${p.tags && p.tags.length ? `<div class="tags" style="margin-top:10px">${p.tags.map((t) => `<span class="tag k">${esc(t)}</span>`).join("")}</div>` : ""}</div>`)}
+      ${I(1, `<div class="prose">${p.html}</div>`)}
+      ${I(2, `<div class="actions" style="margin-top:8px"><button class="act" data-act="sharelink" data-v="${kind}-${esc(p.slug)}">${ICON.link} Copiar enlace</button></div>`)}
+    </div>`;
+  }
+
+  function vPrivacidad() {
+    return `<div class="wrap legal reveal">
+      ${I(0, `<div class="largetitle"><div class="eyebrow">Información legal</div><h1>Privacidad</h1><div class="sub">Esta web no usa cookies ni herramientas de seguimiento.</div></div>`)}
+      ${I(1, `<div><h2>Qué se guarda en tu dispositivo</h2><div class="card">
+        <p>Solo dos preferencias, en el almacenamiento local de tu navegador: la capilla que marques como <b>Mi capilla</b> y que ya has visto este aviso. No salen de tu dispositivo y puedes borrarlas desde los ajustes del navegador.</p>
+        <p>No hay cookies, analítica, publicidad ni píxeles de redes sociales. Las fuentes, el mapa y los datos se sirven desde esta misma web.</p></div></div>`)}
+      ${I(2, `<div><h2>Alojamiento</h2><div class="card">
+        <p>La web está alojada en GitHub Pages (GitHub, Inc.). Como cualquier servidor, GitHub puede registrar la dirección IP de las visitas por motivos de seguridad, según su propia declaración de privacidad.</p></div></div>`)}
+      ${I(3, `<div><h2>Enlaces a otros servicios</h2><div class="card">
+        <p>«Cómo llegar», «Añadir» al calendario, las webs de las capillas e Instagram abren servicios externos (Google Maps, Google Calendar, Instagram y otros) solo cuando los pulsas. Desde ese momento se aplican sus condiciones.</p></div></div>`)}
+      ${I(4, `<div><h2>Aviso legal</h2><div class="card">
+        <p><b>Autoría:</b> Raigada-García. Trabajo encargado por fieles, sin ánimo de lucro.</p>
+        <p>Web informativa sin vínculo oficial con la Fraternidad Sacerdotal San Pío X, el Arzobispado de Barcelona ni ninguna de las capillas. Los horarios proceden de sus webs y hojas públicas y pueden cambiar: confírmalos siempre con cada capilla.</p>
+        <p>Calendario litúrgico calculado con Divinum Officium. Cartografía © OpenStreetMap contributors (ODbL). Tipografías EB Garamond e Inter (SIL Open Font License).</p></div></div>`)}
+      ${Object.keys(PHOTOS).length ? I(5, `<div><h2>Créditos de las imágenes</h2><div class="card">
+        ${S.chapels.flatMap((c) => (PHOTOS[c.id] || []).map((p) => `<p><b>${esc(c.tag)}:</b> ${esc(p.caption || "Fotografía")}. © ${p.source ? `<a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.credit || "su autor")}</a>` : esc(p.credit || "su autor")}.</p>`)).join("")}
+        <p>Las imágenes pertenecen a sus autores y se muestran citando su procedencia. Si eres titular de alguna y quieres que se retire o se modifique el crédito, escríbenos y lo haremos de inmediato.</p></div></div>`) : ""}
+    </div>`;
+  }
+
+  // ------------------------------------------------------------ mapas (Leaflet, capas vectoriales propias)
+  function css(v) { return getComputedStyle(document.documentElement).getPropertyValue(v).trim(); }
+  function drawBase(m) {
+    if (!MAP) return;
+    const R = L.canvas({ padding: 0.3 });
+    const add = (lines, style) => lines.forEach((ln) => L.polyline(ln, { renderer: R, interactive: false, ...style }).addTo(m));
+    MAP.parks.forEach((p) => L.polygon(p, { renderer: R, interactive: false, stroke: false, fillColor: css("--map-park"), fillOpacity: 1 }).addTo(m));
+    add(MAP.roads.minor, { color: css("--map-road"), weight: 3, lineCap: "round" });
+    add(MAP.roads.mid, { color: css("--map-road-edge"), weight: 6.5, lineCap: "round" });
+    add(MAP.roads.mid, { color: css("--map-road"), weight: 4.5, lineCap: "round" });
+    add(MAP.roads.major, { color: css("--map-road-edge"), weight: 8, lineCap: "round" });
+    add(MAP.roads.major, { color: css("--map-major"), weight: 6, lineCap: "round" });
+    add(MAP.subway, { color: css("--map-subway"), weight: 2, dashArray: "4 5" });
+    MAP.labels.filter((l) => l[3] === 2 && !/ - | i (el|els|la|les) /i.test(l[2])).forEach(([la, lo, name]) => L.marker([la, lo], { interactive: false, keyboard: false, icon: L.divIcon({ className: "", html: `<div class="nlabel">${esc(name)}</div>`, iconSize: null }) }).addTo(m));
+  }
+  function pins(m, onSel) {
+    const out = {};
+    for (const c of S.chapels) {
+      const g = GEO.chapels[c.id]; if (!g) continue;
+      const mk = L.marker([g.lat, g.lon], { keyboard: true, title: c.name, icon: L.divIcon({ className: "", iconSize: null, html: `<div class="pin" id="pin-${esc(c.id)}" style="--c:var(--ch-${esc(c.id)})"><span class="d"></span>${esc(c.tag)}</div>` }) }).addTo(m);
+      if (onSel) mk.on("click", () => onSel(c.id)); else mk.on("click", () => { location.hash = "capilla-" + c.id; });
+      out[c.id] = mk;
+    }
+    return out;
+  }
+  function makeMap(el, opts = {}) {
+    if (!window.L || !el) { if (el) el.innerHTML = `<div class="map-fallback">El mapa no se ha podido cargar.</div>`; return null; }
+    const pts = S.chapels.map((c) => GEO.chapels[c.id]).filter(Boolean).map((g) => [g.lat, g.lon]);
+    if (!pts.length) { el.innerHTML = `<div class="map-fallback">Ubicaciones en preparación.</div>`; return null; }
+    const m = L.map(el, { zoomControl: false, attributionControl: true, zoomSnap: 0.25, minZoom: 12, maxZoom: 18, dragging: opts.interactive !== false, scrollWheelZoom: opts.interactive !== false, touchZoom: opts.interactive !== false, doubleClickZoom: opts.interactive !== false, boxZoom: false, keyboard: opts.interactive !== false, tap: false });
+    m.attributionControl.setPrefix(false).addAttribution('© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>');
+    if (MAP) m.setMaxBounds(L.latLngBounds([MAP.bbox[0], MAP.bbox[1]], [MAP.bbox[2], MAP.bbox[3]]).pad(0.1));
+    drawBase(m);
+    if (opts.focus && GEO.chapels[opts.focus]) m.setView([GEO.chapels[opts.focus].lat, GEO.chapels[opts.focus].lon], 16);
+    else m.fitBounds(pts, { padding: opts.pad || [40, 40] });
+    return m;
+  }
+  function initMaps(route) {
+    if (mapInst) { mapInst.remove(); mapInst = null; }
+    if (miniInst) { miniInst.remove(); miniInst = null; }
+    const big = document.getElementById("map");
+    if (big) {
+      mapInst = makeMap(big, { pad: [60, 60] });
+      if (!mapInst) return;
+      mapInst.fitBounds(S.chapels.map((c) => GEO.chapels[c.id]).filter(Boolean).map((g) => [g.lat, g.lon]), { paddingTopLeft: [50, 60], paddingBottomRight: [50, 220] });
+      const cards = document.getElementById("mapcards");
+      const select = (id, fromScroll) => {
+        document.querySelectorAll(".pin").forEach((p) => p.classList.toggle("sel", p.id === "pin-" + id));
+        const g = GEO.chapels[id]; if (g) mapInst.flyTo([g.lat, g.lon], Math.max(mapInst.getZoom(), 15), { duration: matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 0.8 });
+        if (!fromScroll) { const card = cards.querySelector(`[data-ch="${id}"]`); card && card.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" }); }
+      };
+      pins(mapInst, (id) => select(id, false));
+      let tmr;
+      cards.addEventListener("scroll", () => { clearTimeout(tmr); tmr = setTimeout(() => {
+        const mid = cards.scrollLeft + cards.clientWidth / 2; let best = null, bd = 1e9;
+        cards.querySelectorAll(".mapcard").forEach((c) => { const d = Math.abs(c.offsetLeft + c.clientWidth / 2 - mid); if (d < bd) { bd = d; best = c.dataset.ch; } });
+        if (best) select(best, true); }, 140); }, { passive: true });
+    }
+    const mini = document.getElementById("minimap") || document.getElementById("chapmap");
+    if (mini) {
+      const focus = route.startsWith("capilla-") ? route.slice(8) : null;
+      miniInst = makeMap(mini, { interactive: false, focus, pad: [34, 34] });
+      if (miniInst) { pins(miniInst, focus ? () => window.open(mapsUrl(ch(focus)), "_blank") : null); miniInst.getContainer().addEventListener("click", (e) => { if (!focus && !e.target.closest(".pin")) location.hash = "mapa"; }); }
+    }
+  }
+
+  // ------------------------------------------------------------ router
+  const ROUTES = { hoy: vHoy, horarios: vHorarios, mapa: vMapa, agenda: vAgenda, mas: vMas, guia: vGuia, avisos: vAvisos, privacidad: () => vPrivacidad(), blog: vBlog, catequesis: vCatequesis };
+  const TITLES = { hoy: "Hoy", horarios: "Horarios", mapa: "Mapa", agenda: "Agenda", mas: "Más", guia: "Primera vez", avisos: "Avisos", privacidad: "Privacidad", blog: "Blog", catequesis: "Catequesis" };
+  const PARENT = { guia: "mas", avisos: "mas", privacidad: "mas", blog: "mas", catequesis: "mas" };
+  function route() { const h = (location.hash || "#hoy").slice(1); return ROUTES[h] || /^(capilla|post|cat)-/.test(h) ? h : "hoy"; }
+  function render(opts = {}) {
+    if (!S) return;
+    const r = route();
+    const isCh = r.startsWith("capilla-");
+    const art = /^(post|cat)-(.+)$/.exec(r);
+    const tab = isCh ? "mapa" : art ? "mas" : PARENT[r] || r;
+    const go = () => {
+      view.innerHTML = isCh ? vCapilla(r.slice(8)) : art ? vArticle(art[1], art[2]) : ROUTES[r]();
+      document.querySelectorAll(".tabbar a").forEach((a) => { if (a.dataset.tab === tab) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+      document.getElementById("toptitle").textContent = isCh ? ch(r.slice(8))?.tag || "" : art ? (art[1] === "post" ? "Blog" : "Catequesis") : TITLES[r];
+      const back = document.getElementById("back");
+      const parent = isCh ? "mapa" : art ? (art[1] === "post" ? "blog" : "catequesis") : PARENT[r];
+      const label = isCh ? "Atrás" : art ? (art[1] === "post" ? "Blog" : "Catequesis") : "Más";
+      back.innerHTML = isCh || art || PARENT[r] ? `<a class="back" href="#${parent}" data-act="${isCh ? "back" : ""}"><svg width="12" height="20" viewBox="0 0 8 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 1 1 7l6 6"/></svg>${label}</a>` : "";
+      topbar.classList.toggle("scrolled", isCh || !!art || r === "mapa" || scrollY > 40);
+      initMaps(r);
+      if (opts.scroll) window.scrollTo(0, 0);
+      startTicker();
+    };
+    if (opts.animate && document.startViewTransition && !matchMedia("(prefers-reduced-motion: reduce)").matches) document.startViewTransition(go);
+    else go();
+  }
+  function startTicker() {
+    clearInterval(ticker);
+    ticker = setInterval(() => {
+      const el = document.getElementById("countdown"); if (!el) return;
+      const n = nextMass(Math.max(todayIdx(), 0)); if (!n) return;
+      const t = countdown(n);
+      if (el.textContent !== t) { el.innerHTML = `<span class="tick">${esc(t)}</span>`; }
+      if (n.live && !document.querySelector("#nextcard .live-dot")) render();
+    }, 15000);
+  }
+
+  // ------------------------------------------------------------ eventos
+  document.addEventListener("click", (ev) => {
+    const b = ev.target.closest("[data-act]"); if (!b || !b.dataset.act) return;
+    const v = b.dataset.v;
+    switch (b.dataset.act) {
+      case "day": st.day = +v; render(); break;
+      case "week": st.day = Math.min(Math.max(st.day + +v, 0), S.days.length - 1); render(); break;
+      case "filter": st.filter = v; render(); break;
+      case "onlymass": st.onlyMass = !st.onlyMass; render(); break;
+      case "agkind": st.agKind = v; render(); break;
+      case "agch": st.agCh = v; render(); break;
+      case "month": if (!b.disabled) { st.month = v; render(); } break;
+      case "goday": { ev.preventDefault(); const k = S.days.findIndex((d) => d.date === v); if (k >= 0) { st.day = k; st.filter = "all"; } location.hash === "#horarios" ? render({ scroll: true }) : (location.hash = "horarios"); break; }
+      case "filtergo": st.filter = v; st.day = Math.max(todayIdx(), 0); location.hash = "horarios"; break;
+      case "fav": { const cur = store.get("fav", null); store.set("fav", cur === v ? null : v); toast(cur === v ? "Quitada de Mi capilla" : "Guardada como Mi capilla"); render(); break; }
+      case "copy": ev.preventDefault(); copy(v); break;
+      case "share": copy(new URL("#capilla-" + v, location.href).href, "Enlace copiado"); break;
+      case "sharelink": copy(new URL("#" + v, location.href).href, "Enlace copiado"); break;
+      case "back": if (history.length > 1) { ev.preventDefault(); history.back(); } break;
+      case "photo": openPhoto(route().slice(8), +v); break;
+      case "theme": store.set("theme", v); applyTheme(); render(); toast(v === "auto" ? "Tema automático" : v === "dark" ? "Tema oscuro" : "Tema claro"); break;
+    }
+  });
+  function openPhoto(id, k) {
+    const p = (PHOTOS[id] || [])[k]; if (!p) return;
+    const lb = document.createElement("div");
+    lb.className = "lightbox"; lb.setAttribute("role", "dialog"); lb.setAttribute("aria-modal", "true");
+    lb.innerHTML = `<div><img src="${esc(p.src)}" alt="${esc(p.caption || "")}"><p>${esc(p.caption || "")}${p.credit ? `<br>Foto: ${p.source ? `<a href="${esc(p.source)}" target="_blank" rel="noopener">${esc(p.credit)}</a>` : esc(p.credit)}` : ""}</p></div><button aria-label="Cerrar">✕</button>`;
+    const close = () => { lb.remove(); document.removeEventListener("keydown", onKey); };
+    const onKey = (e) => { if (e.key === "Escape") close(); };
+    lb.addEventListener("click", (e) => { if (e.target.closest("a")) return; if (e.target === lb || e.target.closest("button")) close(); });
+    document.addEventListener("keydown", onKey);
+    document.body.appendChild(lb); lb.querySelector("button").focus();
+  }
+  window.addEventListener("hashchange", () => render({ animate: true, scroll: true }));
+  window.addEventListener("scroll", () => { const r = route(); topbar.classList.toggle("scrolled", r.startsWith("capilla-") || r === "mapa" || scrollY > 40); }, { passive: true });
+  matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", () => render());
+  new MutationObserver(() => render()).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+
+  // ------------------------------------------------------------ tema
+  let themeSetByUs = false;
+  const THEME_ICON = {
+    auto: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5a8.5 8.5 0 0 1 0 17Z" fill="currentColor"/></svg>',
+    light: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>',
+    dark: '<svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 14.6A8.5 8.5 0 0 1 9.4 3.5a8.5 8.5 0 1 0 11.1 11.1Z"/></svg>',
+  };
+  const THEME_NAME = { auto: "automática", light: "clara", dark: "oscura" };
+  function applyTheme() {
+    const t = store.get("theme", "auto"), root = document.documentElement;
+    const tb = document.getElementById("themebtn");
+    if (tb) { tb.innerHTML = THEME_ICON[t] || THEME_ICON.auto; tb.setAttribute("aria-label", `Apariencia: ${THEME_NAME[t] || "automática"}. Pulsa para cambiar`); tb.title = `Apariencia ${THEME_NAME[t] || "automática"}`; }
+    if (t === "light" || t === "dark") { root.setAttribute("data-theme", t); themeSetByUs = true; }
+    else if (themeSetByUs) { root.removeAttribute("data-theme"); themeSetByUs = false; }
+  }
+  applyTheme();
+  document.getElementById("themebtn").addEventListener("click", () => {
+    const order = ["auto", "light", "dark"];
+    const next = order[(order.indexOf(store.get("theme", "auto")) + 1) % 3];
+    store.set("theme", next); applyTheme(); render();
+    toast(next === "auto" ? "Apariencia automática" : next === "dark" ? "Apariencia oscura" : "Apariencia clara");
+  });
+
+  // ------------------------------------------------------------ aviso de privacidad
+  (() => {
+    const box = document.getElementById("consent");
+    if (store.get("privacy-ok", false)) return;
+    box.hidden = false;
+    const ok = () => { store.set("privacy-ok", true); box.hidden = true; };
+    document.getElementById("consent-ok").addEventListener("click", ok);
+    document.getElementById("consent-more").addEventListener("click", ok);
+  })();
+
+  // ------------------------------------------------------------ carga
+  const get = (u) => fetch(u, { cache: "no-cache" }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  Promise.all([get("data/site.json"), get("data/geo.json"), get("data/map.json"), get("data/photos.json"), get("data/blog.json"), get("data/catequesis.json")]).then(([s, g, m, p, bl, ca]) => {
+    BLOG = bl || []; CATE = ca || [];
+    if (!s) { view.innerHTML = `<div class="wrap largetitle"><h1>Sin conexión</h1><p class="sub">No se han podido cargar los horarios. Vuelve a intentarlo en unos minutos.</p></div>`; return; }
+    S = s; GEO = g || { chapels: {} }; MAP = m; PHOTOS = p || {};
+    const TAGS = { I: "Sants", II: "Vallcarca", III: "Laforja" };
+    S.chapels.forEach((c) => { c.tag = c.tag || TAGS[c.id] || c.district; });
+    const ti = Math.max(todayIdx(), 0); st.day = ti;
+    const lit = S.days[ti] && S.days[ti].liturgy;
+    if (lit) document.documentElement.setAttribute("data-lit", lit.color);
+    render();
+  });
+})();
+</script>
+<script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(() => {});</script>
+</body>
+</html>

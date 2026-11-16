@@ -1,0 +1,100 @@
+{
+ "chapels": {
+  "I": {
+   "lat": 41.381277,
+   "lon": 2.136153,
+   "transit": [
+    {
+     "name": "Plaça del Centre",
+     "kind": "Metro",
+     "lines": "",
+     "m": 74,
+     "min": 1
+    },
+    {
+     "name": "Sants Estació",
+     "kind": "Metro",
+     "lines": "",
+     "m": 380,
+     "min": 6
+    },
+    {
+     "name": "Barcelona - Sants",
+     "kind": "Tren",
+     "lines": "71801",
+     "m": 408,
+     "min": 7
+    },
+    {
+     "name": "les Corts",
+     "kind": "Metro",
+     "lines": "",
+     "m": 542,
+     "min": 9
+    }
+   ]
+  },
+  "II": {
+   "lat": 41.41318,
+   "lon": 2.144145,
+   "transit": [
+    {
+     "name": "Vallcarca",
+     "kind": "Metro",
+     "lines": "",
+     "m": 145,
+     "min": 2
+    },
+    {
+     "name": "Penitents",
+     "kind": "Metro",
+     "lines": "",
+     "m": 546,
+     "min": 9
+    },
+    {
+     "name": "Avinguda Tibidabo",
+     "kind": "FGC",
+     "lines": "",
+     "m": 702,
+     "min": 11
+    }
+   ]
+  },
+  "III": {
+   "lat": 41.398876,
+   "lon": 2.149479,
+   "transit": [
+    {
+     "name": "Gràcia",
+     "kind": "FGC",
+     "lines": "",
+     "m": 243,
+     "min": 4
+    },
+    {
+     "name": "Gràcia",
+     "kind": "Metro",
+     "lines": "",
+     "m": 282,
+     "min": 5
+    },
+    {
+     "name": "Plaça Molina",
+     "kind": "FGC",
+     "lines": "",
+     "m": 314,
+     "min": 5
+    },
+    {
+     "name": "Sant Gervasi",
+     "kind": "FGC",
+     "lines": "",
+     "m": 315,
+     "min": 5
+    }
+   ]
+  }
+ },
+ "attribution": "© OpenStreetMap contributors (ODbL)"
+}
